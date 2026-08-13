@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+@config '../tailwind.config.js';
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased bg-base-white text-charcoal-slate;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-mustard-gold;
+  }
+}
