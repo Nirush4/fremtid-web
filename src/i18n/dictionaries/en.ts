@@ -17,7 +17,7 @@ export const en: TranslationDictionary = {
     closeMenu: 'Close navigation menu',
   },
   home: {
-    heroTitle: 'Build your digital future with Fremtid Web',
+    heroTitle: 'We build fast, accessible, and user-friendly digital products',
     heroSubtitle:
       'We craft accessible, high-performance websites and brand experiences for Norwegian businesses ready to grow online.',
     heroCta: 'View our packages',
@@ -27,23 +27,34 @@ export const en: TranslationDictionary = {
       'Front-end development and graphic design — delivered as one cohesive team.',
     serviceItems: {
       development: {
-        title: 'Front-end development',
+        title: 'Custom Website & Software Development',
         description:
-          'React, TypeScript, and modern tooling built for speed, maintainability, and WCAG 2.1 AA compliance.',
+          'We build fast, secure, and user-friendly websites and apps tailored to your business goals, ensuring a seamless experience for all users.',
       },
       design: {
-        title: 'Graphic & UI design',
+        title: 'Graphic & Visual Design',
         description:
-          'Brand-aligned layouts, typography, and visual systems that look professional on every device.',
+          'Clean layouts, professional typography, and eye-catching designs that build trust with your customers on any device.',
       },
       maintenance: {
-        title: 'Launch & support',
+        title: 'Launch & Ongoing Support',
         description:
-          'Domain setup, SSL, deployment, and post-launch support so your site stays secure and up to date.',
+          'We handle domain setup, secure SSL certificates, publishing, and regular updates so your website always runs smoothly and safely.',
       },
     },
+    techForAll: {
+      tag: 'For small & medium businesses',
+      title: 'Technology available to everyone',
+      description1:
+        'Fremtid Web was founded with a clear vision: to lower the barrier for small and mid-sized businesses looking for modern, professional websites—regardless of company size.',
+      description2:
+        'Great digital solutions should not be reserved for enterprises with large budgets. We offer flexible packages tailored for local businesses and service providers with uncompromised quality and transparent pricing.',
+      description3:
+        'Whether you run a local café, salon, boutique, or consulting firm, we help you stand out and thrive in the digital space.',
+    },
     featuredHeading: 'Featured projects',
-    featuredSubheading: 'A selection of recent work from the Fremtid Web portfolio.',
+    featuredSubheading:
+      'A selection of recent work from the Fremtid Web portfolio.',
     viewAllProjects: 'View all projects',
     trustHeading: 'Why businesses choose us',
     trustItems: {

@@ -18,8 +18,10 @@ export function IllustrationFrame({
       aria-hidden={label ? undefined : true}
       aria-label={label}
     >
-      <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl border-2 border-cappuccino/30 bg-surface p-4 sm:p-6">
-        <div className="flex h-full w-full items-center justify-center">{children}</div>
+      <div className='aspect-[4/3] w-full  p-4 sm:p-6'>
+        <div className='flex items-center justify-center w-full h-full'>
+          {children}
+        </div>
       </div>
     </figure>
   );
@@ -51,24 +53,25 @@ export function PageIntro({
       : '';
 
   return (
-    <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-16">
+    <div className='grid items-center max-w-6xl gap-10 mx-auto lg:grid-cols-2 lg:gap-16'>
       <div className={textAlign}>
         <h1
           id={titleId}
-          className="text-3xl font-bold leading-tight text-dark-chocolate sm:text-4xl lg:text-5xl"
+          className='text-3xl font-bold leading-tight text-dark-chocolate sm:text-4xl lg:text-5xl'
         >
           {title}
         </h1>
-        <p className="mt-4 max-w-xl text-base leading-relaxed text-dark-chocolate sm:text-lg">
+        <p className='max-w-xl mt-4 text-base leading-relaxed text-dark-chocolate sm:text-lg'>
           {description}
         </p>
-        {children && <div className="mt-8">{children}</div>}
+        {children && <div className='mt-8'>{children}</div>}
       </div>
-      <IllustrationFrame label={illustrationLabel}>{illustration}</IllustrationFrame>
+      <IllustrationFrame label={illustrationLabel}>
+        {illustration}
+      </IllustrationFrame>
     </div>
   );
 }
-
 interface SectionWithIllustrationProps {
   readonly heading: string;
   readonly headingId: string;
@@ -98,18 +101,21 @@ export function SectionWithIllustration({
       <div>
         <h2
           id={headingId}
-          className="text-2xl font-bold text-dark-chocolate sm:text-3xl"
+          className='text-2xl font-bold text-dark-chocolate sm:text-3xl'
         >
           {heading}
         </h2>
         {subheading && (
-          <p className="mt-3 text-base leading-relaxed text-dark-chocolate">
+          <p className='mt-3 text-base leading-relaxed text-dark-chocolate'>
             {subheading}
           </p>
         )}
-        <div className="mt-8">{children}</div>
+        <div className='mt-8'>{children}</div>
       </div>
-      <IllustrationFrame label={illustrationLabel} className="lg:justify-self-center">
+      <IllustrationFrame
+        label={illustrationLabel}
+        className='lg:justify-self-center'
+      >
         {illustration}
       </IllustrationFrame>
     </div>

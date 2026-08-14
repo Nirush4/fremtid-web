@@ -17,7 +17,8 @@ export const no: TranslationDictionary = {
     closeMenu: 'Lukk navigasjonsmeny',
   },
   home: {
-    heroTitle: 'Bygg din digitale fremtid med Fremtid Web',
+    heroTitle:
+      'Vi bygger raske, tilgjengelige og brukervennlige digitale produkter',
     heroSubtitle:
       'Vi lager tilgjengelige, høyytelses nettsteder og merkevareopplevelser for norske bedrifter som er klare for vekst på nett.',
     heroCta: 'Se våre pakker',
@@ -27,23 +28,34 @@ export const no: TranslationDictionary = {
       'Frontend-utvikling og grafisk design — levert av ett samlet team.',
     serviceItems: {
       development: {
-        title: 'Frontend-utvikling',
+        title: 'Skreddersydd nettside og programvareutvikling',
         description:
-          'React, TypeScript og moderne verktøy bygget for hastighet, vedlikeholdbarhet og WCAG 2.1 AA-samsvar.',
+          'Vi bygger raske, sikre og brukervennlige nettsider og apper tilpasset din bedrift, med fokus på at alt skal fungere knirkefritt for alle brukere.',
       },
       design: {
-        title: 'Grafisk og UI-design',
+        title: 'Grafisk og visuelt design',
         description:
-          'Merkevaretilpassede layouter, typografi og visuelle systemer som ser profesjonelle ut på alle enheter.',
+          'Gjennomtenkte oppsett, god typografi og tiltalende design som bygger tillit hos kundene dine på alle enheter.',
       },
       maintenance: {
-        title: 'Lansering og støtte',
+        title: 'Lansering og oppfølging',
         description:
-          'Domeneoppsett, SSL, publisering og støtte etter lansering slik at nettstedet ditt forblir sikkert og oppdatert.',
+          'Vi ordner alt fra domene og sikre SSL-sertifikater til publisering og drift, slik at nettsiden din alltid er trygg og oppdatert.',
       },
     },
+    techForAll: {
+      tag: 'For små og mellomstore bedrifter',
+      title: 'Teknologi tilgjengelig for alle',
+      description1:
+        'Fremtid Web ble startet med én klar visjon: å senke terskelen for små og mellomstore bedrifter som ønsker moderne og profesjonelle nettsider, uavhengig av bedriftens størrelse.',
+      description2:
+        'Gode digitale løsninger skal ikke være forbeholdt aktører med store budsjetter. Vi leverer fleksible pakker skreddersydd for lokale aktører og tjenesteytere med full kvalitet og transparente priser.',
+      description3:
+        'Enten du driver kafé, frisørsalong, konsulentvirksomhet eller et lokalt foretak – vi hjelper deg å bli synlig og ta del i den digitale hverdagen.',
+    },
     featuredHeading: 'Utvalgte prosjekter',
-    featuredSubheading: 'Et utvalg av nylig arbeid fra Fremtid Web-porteføljen.',
+    featuredSubheading:
+      'Et utvalg av nylig arbeid fra Fremtid Web-porteføljen.',
     viewAllProjects: 'Se alle prosjekter',
     trustHeading: 'Hvorfor bedrifter velger oss',
     trustItems: {

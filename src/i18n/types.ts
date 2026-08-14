@@ -28,17 +28,36 @@ export interface HomeTranslations {
   readonly servicesHeading: string;
   readonly servicesSubheading: string;
   readonly serviceItems: {
-    readonly development: { readonly title: string; readonly description: string };
+    readonly development: {
+      readonly title: string;
+      readonly description: string;
+    };
     readonly design: { readonly title: string; readonly description: string };
-    readonly maintenance: { readonly title: string; readonly description: string };
+    readonly maintenance: {
+      readonly title: string;
+      readonly description: string;
+    };
+  };
+  readonly techForAll: {
+    readonly tag: string;
+    readonly title: string;
+    readonly description1: string;
+    readonly description2: string;
+    readonly description3: string;
   };
   readonly featuredHeading: string;
   readonly featuredSubheading: string;
   readonly viewAllProjects: string;
   readonly trustHeading: string;
   readonly trustItems: {
-    readonly accessible: { readonly title: string; readonly description: string };
-    readonly transparent: { readonly title: string; readonly description: string };
+    readonly accessible: {
+      readonly title: string;
+      readonly description: string;
+    };
+    readonly transparent: {
+      readonly title: string;
+      readonly description: string;
+    };
     readonly local: { readonly title: string; readonly description: string };
   };
 }
@@ -52,13 +71,19 @@ export interface AboutTranslations {
   readonly expertiseItems: {
     readonly frontend: { readonly title: string; readonly description: string };
     readonly design: { readonly title: string; readonly description: string };
-    readonly collaboration: { readonly title: string; readonly description: string };
+    readonly collaboration: {
+      readonly title: string;
+      readonly description: string;
+    };
   };
   readonly valuesHeading: string;
   readonly values: {
     readonly quality: { readonly title: string; readonly description: string };
     readonly clarity: { readonly title: string; readonly description: string };
-    readonly partnership: { readonly title: string; readonly description: string };
+    readonly partnership: {
+      readonly title: string;
+      readonly description: string;
+    };
   };
 }
 
@@ -126,6 +151,7 @@ export interface TranslationDictionary {
   };
   readonly nav: NavTranslations;
   readonly home: HomeTranslations;
+
   readonly about: AboutTranslations;
   readonly projects: ProjectsTranslations;
   readonly faq: FaqTranslations;
