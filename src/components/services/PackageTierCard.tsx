@@ -21,13 +21,13 @@ export function PackageTierCard({
       aria-labelledby={headingId}
       className={`relative flex h-full flex-col rounded-2xl border-2 p-6 shadow-sm ${
         isPopular
-          ? 'border-mustard-gold bg-warm-taupe ring-2 ring-mustard-gold ring-offset-2 ring-offset-base-white'
-          : 'border-warm-taupe bg-base-white'
+          ? 'border-cappuccino bg-warm-beige ring-2 ring-cappuccino ring-offset-2 ring-offset-surface'
+          : 'border-warm-beige bg-surface'
       }`}
     >
       {isPopular && (
         <span
-          className='absolute px-4 py-1 text-sm font-semibold -translate-x-1/2 rounded-full -top-3 left-1/2 bg-muted-coral text-base-white'
+          className='absolute px-4 py-1 text-sm font-semibold -translate-x-1/2 rounded-full -top-3 left-1/2 bg-terra-cotta text-dark-chocolate'
           aria-label={t.services.mostPopular}
         >
           {t.services.mostPopular}
@@ -35,19 +35,19 @@ export function PackageTierCard({
       )}
 
       <header className='pt-2 mb-6'>
-        <h3 id={headingId} className='text-xl font-bold text-charcoal-slate'>
+        <h3 id={headingId} className='text-xl font-bold text-dark-chocolate'>
           {content.name}
         </h3>
-        <p className='mt-2 text-sm leading-relaxed text-charcoal-slate'>
+        <p className='mt-2 text-sm leading-relaxed text-dark-chocolate'>
           {content.description}
         </p>
       </header>
 
       <div className='mb-6'>
-        <p className='text-2xl font-bold text-charcoal-slate'>
+        <p className='text-2xl font-bold text-dark-chocolate'>
           {content.price}
         </p>
-        <p className='mt-1 text-sm text-charcoal-slate'>{content.priceNote}</p>
+        <p className='mt-1 text-sm text-dark-chocolate'>{content.priceNote}</p>
       </div>
 
       <ul
@@ -57,10 +57,10 @@ export function PackageTierCard({
         {content.features.map((feature) => (
           <li
             key={feature}
-            className='flex items-start gap-3 text-sm text-charcoal-slate'
+            className='flex items-start gap-3 text-sm text-dark-chocolate'
           >
             <span
-              className='mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-mustard-gold text-xs font-bold text-charcoal-slate'
+              className='mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-cappuccino text-xs font-bold text-dark-chocolate'
               aria-hidden='true'
             >
               ✓
@@ -74,8 +74,8 @@ export function PackageTierCard({
         to='/faq'
         className={`inline-flex min-h-11 items-center justify-center rounded-lg px-6 py-3 text-center text-sm font-semibold transition-colors ${
           isPopular
-            ? 'bg-muted-coral text-base-white hover:bg-charcoal-slate'
-            : 'bg-mustard-gold text-charcoal-slate hover:bg-charcoal-slate hover:text-base-white'
+            ? 'bg-terra-cotta text-dark-chocolate hover:bg-dark-chocolate hover:text-surface'
+            : 'bg-cappuccino text-dark-chocolate hover:bg-dark-chocolate hover:text-surface'
         }`}
       >
         {t.services.getStarted}

@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        'mustard-gold': '#D4A373',
-        'warm-taupe': '#FAEDCD',
-        'charcoal-slate': '#333333',
-        'muted-coral': '#C84B31',
-        'base-white': '#FFFFFF',
+        'warm-beige': '#F8F3EC',
+        'dark-chocolate': '#51301F',
+        'terra-cotta': '#E1937D',
+        'cappuccino': '#AA8867',
+        surface: '#FFFFFF',
       },
     },
   },

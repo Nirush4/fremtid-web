@@ -38,8 +38,8 @@ export function ProjectFilters({
             onClick={() => onChange(id)}
             className={`min-h-11 rounded-full px-5 py-2 text-sm font-semibold transition-colors ${
               isActive
-                ? 'bg-muted-coral text-base-white'
-                : 'border-2 border-mustard-gold bg-base-white text-charcoal-slate hover:bg-warm-taupe'
+                ? 'bg-terra-cotta text-dark-chocolate hover:bg-dark-chocolate hover:text-surface'
+                : 'border-2 border-cappuccino bg-surface text-dark-chocolate hover:bg-warm-beige'
             }`}
           >
             {t.projects[labelKey]}

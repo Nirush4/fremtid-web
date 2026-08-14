@@ -26,12 +26,12 @@ function AccordionItem({
   };
 
   return (
-    <div className='border-b border-warm-taupe last:border-b-0'>
+    <div className='border-b border-warm-beige last:border-b-0'>
       <h3>
         <button
           id={buttonId}
           type='button'
-          className='flex items-center justify-between w-full gap-4 py-4 text-base font-semibold text-left min-h-11 text-charcoal-slate hover:text-muted-coral'
+          className='flex items-center justify-between w-full gap-4 py-4 text-base font-semibold text-left min-h-11 text-dark-chocolate hover:text-terra-cotta'
           aria-expanded={isOpen}
           aria-controls={panelId}
           onClick={onToggle}
@@ -39,7 +39,7 @@ function AccordionItem({
         >
           {question}
           <span
-            className='flex items-center justify-center w-6 h-6 text-sm font-bold rounded-full shrink-0 bg-mustard-gold text-charcoal-slate'
+            className='flex items-center justify-center w-6 h-6 text-sm font-bold rounded-full shrink-0 bg-cappuccino text-dark-chocolate'
             aria-hidden='true'
           >
             {isOpen ? '−' : '+'}
@@ -53,7 +53,7 @@ function AccordionItem({
         hidden={!isOpen}
         className='pb-4'
       >
-        <p className='text-sm leading-relaxed text-charcoal-slate'>{answer}</p>
+        <p className='text-sm leading-relaxed text-dark-chocolate'>{answer}</p>
       </div>
     </div>
   );
@@ -72,7 +72,7 @@ export function Accordion({ items }: AccordionProps) {
   const [openId, setOpenId] = useState<string | null>(items[0]?.id ?? null);
 
   return (
-    <div className='px-6 border-2 rounded-2xl border-warm-taupe bg-base-white'>
+    <div className='px-6 border-2 rounded-2xl border-warm-beige bg-surface'>
       {items.map((item) => (
         <AccordionItem
           key={item.id}

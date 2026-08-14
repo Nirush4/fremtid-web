@@ -14,30 +14,30 @@ export function ProjectCard({ projectId, content }: ProjectCardProps) {
   return (
     <article
       aria-labelledby={`project-${projectId}`}
-      className='flex flex-col h-full p-6 transition-shadow border-2 rounded-2xl border-warm-taupe bg-base-white hover:shadow-md'
+      className='flex flex-col h-full p-6 transition-shadow border-2 rounded-2xl border-warm-beige bg-surface hover:shadow-md'
     >
       <div
-        className='flex items-center justify-center h-40 mb-4 rounded-xl bg-warm-taupe'
+        className='flex items-center justify-center h-40 mb-4 rounded-xl bg-warm-beige'
         aria-hidden='true'
       >
-        <span className='text-4xl font-bold text-mustard-gold'>
+        <span className='text-4xl font-bold text-cappuccino'>
           {content.title.charAt(0)}
         </span>
       </div>
 
       <header>
-        <p className='text-xs font-medium tracking-wide uppercase text-muted-coral'>
+        <p className='text-xs font-medium tracking-wide uppercase text-terra-cotta'>
           {content.client}
         </p>
         <h3
           id={`project-${projectId}`}
-          className='mt-1 text-lg font-bold text-charcoal-slate'
+          className='mt-1 text-lg font-bold text-dark-chocolate'
         >
           {content.title}
         </h3>
       </header>
 
-      <p className='flex-grow mt-3 text-sm leading-relaxed text-charcoal-slate'>
+      <p className='flex-grow mt-3 text-sm leading-relaxed text-dark-chocolate'>
         {content.description}
       </p>
 
@@ -45,7 +45,7 @@ export function ProjectCard({ projectId, content }: ProjectCardProps) {
         {content.tags.map((tag) => (
           <li
             key={tag}
-            className='px-3 py-1 text-xs font-medium rounded-full bg-warm-taupe text-charcoal-slate'
+            className='px-3 py-1 text-xs font-medium rounded-full bg-warm-beige text-dark-chocolate'
           >
             {tag}
           </li>
@@ -54,7 +54,7 @@ export function ProjectCard({ projectId, content }: ProjectCardProps) {
 
       <Link
         to='/projects'
-        className='inline-flex items-center gap-2 mt-6 text-sm font-semibold min-h-11 text-muted-coral hover:text-charcoal-slate'
+        className='inline-flex items-center gap-2 mt-6 text-sm font-semibold min-h-11 text-terra-cotta hover:text-dark-chocolate'
         aria-label={`${t.projects.viewCaseStudy}: ${content.title}`}
       >
         {t.projects.viewCaseStudy}

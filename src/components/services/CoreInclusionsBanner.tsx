@@ -15,16 +15,16 @@ export function CoreInclusionsBanner() {
   return (
     <section
       aria-labelledby='core-inclusions-heading'
-      className='px-6 py-10 rounded-2xl bg-warm-taupe sm:px-10'
+      className='px-6 py-10 rounded-2xl bg-warm-beige sm:px-10'
     >
       <header className='max-w-2xl mx-auto mb-8 text-center'>
         <h2
           id='core-inclusions-heading'
-          className='text-2xl font-bold text-charcoal-slate sm:text-3xl'
+          className='text-2xl font-bold text-dark-chocolate sm:text-3xl'
         >
           {t.services.coreInclusionsHeading}
         </h2>
-        <p className='mt-3 text-base leading-relaxed text-charcoal-slate'>
+        <p className='mt-3 text-base leading-relaxed text-dark-chocolate'>
           {t.services.coreInclusionsSubheading}
         </p>
       </header>
@@ -37,18 +37,18 @@ export function CoreInclusionsBanner() {
           return (
             <li
               key={id}
-              className='p-6 border rounded-xl border-mustard-gold/30 bg-base-white'
+              className='p-6 border rounded-xl border-cappuccino/30 bg-surface'
             >
               <div
-                className='flex items-center justify-center w-12 h-12 mb-4 rounded-lg bg-mustard-gold'
+                className='flex items-center justify-center w-12 h-12 mb-4 rounded-lg bg-cappuccino'
                 aria-hidden='true'
               >
-                <Icon className='w-6 h-6 text-charcoal-slate' strokeWidth={2} />
+                <Icon className='w-6 h-6 text-dark-chocolate' strokeWidth={2} />
               </div>
-              <h3 className='text-lg font-semibold text-charcoal-slate'>
+              <h3 className='text-lg font-semibold text-dark-chocolate'>
                 {content.title}
               </h3>
-              <p className='mt-2 text-sm leading-relaxed text-charcoal-slate'>
+              <p className='mt-2 text-sm leading-relaxed text-dark-chocolate'>
                 {content.description}
               </p>
             </li>

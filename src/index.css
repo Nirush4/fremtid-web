@@ -2,15 +2,23 @@
 @config '../tailwind.config.js';
 
 @layer base {
+  :root {
+    --color-background: #f8f3ec;
+    --color-primary: #51301f;
+    --color-accent: #e1937d;
+    --color-secondary: #aa8867;
+    --color-surface: #ffffff;
+  }
+
   html {
     scroll-behavior: smooth;
   }
 
   body {
-    @apply antialiased bg-base-white text-charcoal-slate;
+    @apply bg-warm-beige text-dark-chocolate antialiased;
   }
 
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-mustard-gold;
+    @apply outline-2 outline-offset-2 outline-cappuccino;
   }
 }
