@@ -1,5 +1,5 @@
 import type { FaqItemContent } from '../types/faq';
-import type { ProjectContent, ProjectId } from '../types/projects';
+import type { ProjectContent } from '../types/projects';
 import type {
   CoreInclusionContent,
   PackageTierContent,
@@ -96,7 +96,7 @@ export interface ProjectsTranslations {
   readonly filterEcommerce: string;
   readonly viewCaseStudy: string;
   readonly noResults: string;
-  readonly projects: Record<ProjectId, ProjectContent>;
+  readonly projects: Record<string, ProjectContent>;
 }
 
 export interface FaqTranslations {
@@ -151,7 +151,6 @@ export interface TranslationDictionary {
   };
   readonly nav: NavTranslations;
   readonly home: HomeTranslations;
-
   readonly about: AboutTranslations;
   readonly projects: ProjectsTranslations;
   readonly faq: FaqTranslations;

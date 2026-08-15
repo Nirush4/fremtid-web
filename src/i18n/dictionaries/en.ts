@@ -54,7 +54,7 @@ export const en: TranslationDictionary = {
     },
     featuredHeading: 'Featured projects',
     featuredSubheading:
-      'A selection of recent work from the Fremtid Web portfolio.',
+      'A selection of recent front-end work from the Fremtid Web portfolio.',
     viewAllProjects: 'View all projects',
     trustHeading: 'Why businesses choose us',
     trustItems: {
@@ -125,7 +125,7 @@ export const en: TranslationDictionary = {
   projects: {
     pageTitle: 'Projects',
     pageDescription:
-      'Explore our portfolio of websites and design work for businesses across Norway.',
+      'Explore our portfolio of front-end applications, interactive experiences, and digital platforms built with modern web technologies.',
     filterAll: 'All',
     filterWeb: 'Web development',
     filterDesign: 'Design',
@@ -133,47 +133,81 @@ export const en: TranslationDictionary = {
     viewCaseStudy: 'View case study',
     noResults: 'No projects match the selected filter.',
     projects: {
-      'nordic-brew': {
-        title: 'Nordic Brew Co.',
-        client: 'Craft brewery, Oslo',
+      1: {
+        title: 'Holidaze 🏡',
+        client: 'Accommodation Booking Platform',
         description:
-          'A responsive brand site with product catalogue, taproom events, and online ordering integration.',
-        tags: ['React', 'CMS', 'Brand design'],
+          'Modern accommodation booking platform built with React and TypeScript, featuring venue management, bookings, authentication, and a scalable frontend architecture.',
+        tags: ['React', 'TypeScript', 'Tailwind CSS', 'Zustand', 'Vitest'],
       },
-      'fjord-wellness': {
-        title: 'Fjord Wellness',
-        client: 'Health studio, Bergen',
+      2: {
+        title: 'Online Shop 🛒',
+        client: 'Frontend E-commerce Application',
         description:
-          'Calming visual identity and booking-focused landing pages for a wellness centre.',
-        tags: ['UI/UX', 'Booking', 'Accessibility'],
+          'Frontend e-commerce application built with React and TypeScript, focused on performance, scalability, and a clean user experience.',
+        tags: [
+          'React',
+          'TypeScript',
+          'TanStack Query',
+          'Zustand',
+          'Tailwind CSS',
+        ],
       },
-      'oslo-artisan': {
-        title: 'Oslo Artisan Market',
-        client: 'Online marketplace',
+      3: {
+        title: 'NewsHub 📰',
+        client: 'Full-stack News Platform',
         description:
-          'Multi-vendor e-commerce platform with product filters, vendor profiles, and secure checkout.',
-        tags: ['E-commerce', 'Stripe', 'Multi-vendor'],
+          'Full-stack news platform built with React, TypeScript, and Tailwind CSS, using Supabase as a Backend-as-a-Service for authentication and database management.',
+        tags: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'PostgreSQL'],
       },
-      'bergen-legal': {
-        title: 'Bergen Legal Partners',
-        client: 'Law firm, Bergen',
+      4: {
+        title: 'Auction House 🏷️',
+        client: 'Responsive Auction Platform',
         description:
-          'Professional corporate site with practice area pages, team profiles, and contact forms.',
-        tags: ['Corporate', 'SEO', 'Forms'],
+          'Responsive and accessible auction platform built with Vanilla TypeScript and Tailwind CSS, integrating the Noroff Auction House API v2.',
+        tags: ['TypeScript', 'Tailwind CSS', 'Noroff API v2', 'JWT'],
       },
-      'trondheim-tech': {
-        title: 'Trondheim Tech Hub',
-        client: 'Coworking space',
+      5: {
+        title: 'Flip Match – Memory Card Game',
+        client: 'Interactive Web Game',
         description:
-          'Dynamic site showcasing membership plans, event calendar, and community highlights.',
-        tags: ['Events', 'Membership', 'React'],
+          'A responsive memory card matching game built with React, TypeScript, and Tailwind CSS, featuring smooth interactions and simple game mechanics.',
+        tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
       },
-      'studio-lumiere': {
-        title: 'Studio Lumière',
-        client: 'Photography studio',
+      6: {
+        title: 'Rainy Days – Interactive Product Storefronts',
+        client: 'Dynamic Online Shop',
         description:
-          'Portfolio-driven design with fullscreen galleries and a minimal, editorial aesthetic.',
-        tags: ['Portfolio', 'Gallery', 'Brand'],
+          'A dynamic online shop built with vanilla JavaScript and real-time product data from an external API.',
+        tags: ['HTML5', 'CSS3', 'JavaScript', 'REST API'],
+      },
+      7: {
+        title: 'Social Media App – Frontend Social Platform',
+        client: 'Social Interaction App',
+        description:
+          'Frontend social media application with post management, interactions, and responsive design built using TypeScript and Vite.',
+        tags: ['TypeScript', 'Tailwind CSS', 'Vite', 'Vitest'],
+      },
+      8: {
+        title: 'Lens of Wanderlust 📸 – Travel Vlog Page',
+        client: 'Travel Vlog Website',
+        description:
+          'Responsive travel vlog website with API-driven content, videos, and image-based storytelling.',
+        tags: ['HTML5', 'CSS3', 'JavaScript', 'REST APIs'],
+      },
+      9: {
+        title: 'Square Pumpkin 🤳🏼 – Social Media Platform',
+        client: 'Interactive Social Platform',
+        description:
+          'Interactive social media platform with photo sharing, personalized feeds, and built-in camera functionality.',
+        tags: ['HTML5', 'CSS3', 'Tailwind CSS', 'JavaScript'],
+      },
+      10: {
+        title: 'The Community Science Museum: Discover Together',
+        client: 'Educational Museum Website',
+        description:
+          'Interactive and responsive science museum website designed for children, families, and educators.',
+        tags: ['HTML5', 'CSS3', 'JavaScript'],
       },
     },
   },

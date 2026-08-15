@@ -55,7 +55,7 @@ export const no: TranslationDictionary = {
     },
     featuredHeading: 'Utvalgte prosjekter',
     featuredSubheading:
-      'Et utvalg av nylig arbeid fra Fremtid Web-porteføljen.',
+      'Et utvalg av nylig frontend-arbeid fra Fremtid Web-porteføljen.',
     viewAllProjects: 'Se alle prosjekter',
     trustHeading: 'Hvorfor bedrifter velger oss',
     trustItems: {
@@ -126,7 +126,7 @@ export const no: TranslationDictionary = {
   projects: {
     pageTitle: 'Prosjekter',
     pageDescription:
-      'Utforsk porteføljen vår med nettsteder og designarbeid for bedrifter over hele Norge.',
+      'Utforsk porteføljen vår av frontend-applikasjoner, interaktive opplevelser og digitale plattformer bygget med moderne webteknologi.',
     filterAll: 'Alle',
     filterWeb: 'Webutvikling',
     filterDesign: 'Design',
@@ -134,47 +134,81 @@ export const no: TranslationDictionary = {
     viewCaseStudy: 'Se casestudie',
     noResults: 'Ingen prosjekter matcher det valgte filteret.',
     projects: {
-      'nordic-brew': {
-        title: 'Nordic Brew Co.',
-        client: 'Håndverksbryggeri, Oslo',
+      1: {
+        title: 'Holidaze 🏡',
+        client: 'Overnattings- og bookingplattform',
         description:
-          'Et responsivt merkevarenettsted med produktkatalog, taproom-arrangementer og integrert nettbestilling.',
-        tags: ['React', 'CMS', 'Merkevaredesign'],
+          'Modern overnattings- og bookingplattform bygget med React og TypeScript, med funksjoner for administrasjon av utleiesteder, bestillinger, autentisering og en skalerbar frontend-arkitektur.',
+        tags: ['React', 'TypeScript', 'Tailwind CSS', 'Zustand', 'Vitest'],
       },
-      'fjord-wellness': {
-        title: 'Fjord Wellness',
-        client: 'Helsestudio, Bergen',
+      2: {
+        title: 'Online Shop 🛒',
+        client: 'Frontend e-handelsapplikasjon',
         description:
-          'Roelig visuell identitet og bookingsfokuserte landingssider for et velværesenter.',
-        tags: ['UI/UX', 'Booking', 'Tilgjengelighet'],
+          'Frontend e-handelsapplikasjon bygget med React og TypeScript, med fokus på ytelse, skalerbarhet og en ren brukeropplevelse.',
+        tags: [
+          'React',
+          'TypeScript',
+          'TanStack Query',
+          'Zustand',
+          'Tailwind CSS',
+        ],
       },
-      'oslo-artisan': {
-        title: 'Oslo Artisan Market',
-        client: 'Nettbasert markedsplass',
+      3: {
+        title: 'NewsHub 📰',
+        client: 'Fullstack nyhetsplattform',
         description:
-          'Flerleverandør e-handelsplattform med produktfiltre, leverandørprofiler og sikker kasse.',
-        tags: ['E-handel', 'Stripe', 'Flerleverandør'],
+          'Fullstack nyhetsplattform bygget med React, TypeScript og Tailwind CSS, som bruker Supabase som Backend-as-a-Service for autentisering og databasestyring.',
+        tags: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'PostgreSQL'],
       },
-      'bergen-legal': {
-        title: 'Bergen Legal Partners',
-        client: 'Advokatfirma, Bergen',
+      4: {
+        title: 'Auction House 🏷️',
+        client: 'Responsiv auksjonsplattform',
         description:
-          'Profesjonelt bedriftsnettsted med fagområdesider, teamprofiler og kontaktskjemaer.',
-        tags: ['Bedrift', 'SEO', 'Skjemaer'],
+          'Responsiv og tilgjengelig auksjonsplattform bygget med ren TypeScript og Tailwind CSS, med integrasjon mot Noroff Auction House API v2.',
+        tags: ['TypeScript', 'Tailwind CSS', 'Noroff API v2', 'JWT'],
       },
-      'trondheim-tech': {
-        title: 'Trondheim Tech Hub',
-        client: 'Coworking-space',
+      5: {
+        title: 'Flip Match – Memory Card Game',
+        client: 'Interaktivt nettspill',
         description:
-          'Dynamisk nettsted som viser medlemskap, arrangementskalender og fellesskapshøydepunkter.',
-        tags: ['Arrangementer', 'Medlemskap', 'React'],
+          'Et responsivt huskespill (memory) bygget med React, TypeScript og Tailwind CSS, med jevne interaksjoner og enkle spillmekanikker.',
+        tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
       },
-      'studio-lumiere': {
-        title: 'Studio Lumière',
-        client: 'Fotografistudio',
+      6: {
+        title: 'Rainy Days – Interactive Product Storefronts',
+        client: 'Dynamisk nettbutikk',
         description:
-          'Porteføljedrevet design med fullskjermsgallerier og et minimalt, redaksjonelt uttrykk.',
-        tags: ['Portefølje', 'Galleri', 'Merkevare'],
+          'En dynamisk nettbutikk bygget med ren JavaScript og sanntids produktdata fra et eksternt API.',
+        tags: ['HTML5', 'CSS3', 'JavaScript', 'REST API'],
+      },
+      7: {
+        title: 'Social Media App – Frontend Social Platform',
+        client: 'Sosial interaksjonsapp',
+        description:
+          'Frontend sosiale medier-applikasjon med innleggsadministrasjon, interaksjoner og responsivt design bygget med TypeScript og Vite.',
+        tags: ['TypeScript', 'Tailwind CSS', 'Vite', 'Vitest'],
+      },
+      8: {
+        title: 'Lens of Wanderlust 📸 – Travel Vlog Page',
+        client: 'Reisevlogg-nettside',
+        description:
+          'Responsiv reisevlogg-nettside med API-drevet innhold, videoer og bildebasert historiefortelling.',
+        tags: ['HTML5', 'CSS3', 'JavaScript', 'REST APIs'],
+      },
+      9: {
+        title: 'Square Pumpkin 🤳🏼 – Social Media Platform',
+        client: 'Interaktiv sosial plattform',
+        description:
+          'Interaktiv plattform for sosiale medier med bildedeling, personlige feeder og innebygd kamerafunksjonalitet.',
+        tags: ['HTML5', 'CSS3', 'Tailwind CSS', 'JavaScript'],
+      },
+      10: {
+        title: 'The Community Science Museum: Discover Together',
+        client: 'Pedagogisk museumsenettsted',
+        description:
+          'Interaktiv og responsiv vitenskapsmuseum-nettside designet for barn, familier og lærere.',
+        tags: ['HTML5', 'CSS3', 'JavaScript'],
       },
     },
   },

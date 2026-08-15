@@ -5,11 +5,24 @@ import { useLanguage } from '../../context/LanguageContext';
 
 interface ProjectCardProps {
   readonly projectId: ProjectId;
-  readonly content: ProjectContent;
+  readonly content?: ProjectContent;
 }
 
 export function ProjectCard({ projectId, content }: ProjectCardProps) {
   const { t } = useLanguage();
+
+  if (!content) {
+    return (
+      <article
+        aria-labelledby={`project-${projectId}`}
+        className='flex flex-col h-full p-6 transition-shadow border-2 rounded-2xl border-warm-beige bg-surface'
+      >
+        <p className='text-sm text-dark-chocolate'>
+          Loading project content...
+        </p>
+      </article>
+    );
+  }
 
   return (
     <article
