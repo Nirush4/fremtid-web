@@ -91,7 +91,7 @@ export const no: TranslationDictionary = {
       frontend: {
         title: 'Frontend-utvikling',
         description:
-          'React, TypeScript, Vite og Tailwind CSS — moderne teknologi valgt for utvikleropplevelse og sluttbrukerytelse.',
+          'Moderne webstandarder og rammeverk valgt for eksepsjonell hastighet, responsivitet og brukertilfredshet.',
       },
       design: {
         title: 'Grafisk design',
@@ -126,89 +126,58 @@ export const no: TranslationDictionary = {
   projects: {
     pageTitle: 'Prosjekter',
     pageDescription:
-      'Utforsk porteføljen vår av frontend-applikasjoner, interaktive opplevelser og digitale plattformer bygget med moderne webteknologi.',
+      'Utforsk porteføljen vår av nettsider, interaktive opplevelser og digitale plattformer bygget for våre oppdragsgivere.',
     filterAll: 'Alle',
     filterWeb: 'Webutvikling',
     filterDesign: 'Design',
     filterEcommerce: 'E-handel',
-    viewCaseStudy: 'Se casestudie',
+    viewCaseStudy: 'Se nettsiden',
     noResults: 'Ingen prosjekter matcher det valgte filteret.',
     projects: {
-      1: {
+      '1': {
         title: 'Holidaze 🏡',
         client: 'Overnattings- og bookingplattform',
         description:
-          'Modern overnattings- og bookingplattform bygget med React og TypeScript, med funksjoner for administrasjon av utleiesteder, bestillinger, autentisering og en skalerbar frontend-arkitektur.',
-        tags: ['React', 'TypeScript', 'Tailwind CSS', 'Zustand', 'Vitest'],
+          'En moderne destinasjon for reisende som ønsker å oppdage, administrere og bestille unike overnattingssteder med enkelhet og full trygghet.',
+        tags: ['Overnatting', 'Reiseliv', 'Bookingportal', 'Resepsjon'],
+        thumbnail: '/projects/holidaze.png',
+        link: 'https://holidaze-booking-hub.netlify.app/',
       },
-      2: {
+      '2': {
         title: 'Online Shop 🛒',
         client: 'Frontend e-handelsapplikasjon',
         description:
-          'Frontend e-handelsapplikasjon bygget med React og TypeScript, med fokus på ytelse, skalerbarhet og en ren brukeropplevelse.',
-        tags: [
-          'React',
-          'TypeScript',
-          'TanStack Query',
-          'Zustand',
-          'Tailwind CSS',
-        ],
+          'En gjennomført nettbutikk som tilbyr en sømløs handleopplevelse, smidig navigasjon og rask utsjekking for kunder på farten.',
+        tags: ['E-handel', 'Nettbutikk', 'Detaljhandel', 'Produkter'],
+        thumbnail: '/projects/online-shopping.png',
+        link: 'https://online-shopping-master.netlify.app/',
       },
-      3: {
+      '3': {
         title: 'NewsHub 📰',
         client: 'Fullstack nyhetsplattform',
         description:
-          'Fullstack nyhetsplattform bygget med React, TypeScript og Tailwind CSS, som bruker Supabase som Backend-as-a-Service for autentisering og databasestyring.',
-        tags: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'PostgreSQL'],
+          'Et digitalt publiseringsnav som leverer dagsaktuelle historier, undersøkende journalistikk og engasjerende multimedieartikler for daglige lesere.',
+        tags: ['Nyheter', 'Artikler', 'Media', 'Redaksjonelt'],
+        thumbnail: '/projects/news-hub.png',
+        link: 'https://news-hubnet.netlify.app/?q=&page=1',
       },
-      4: {
+      '4': {
         title: 'Auction House 🏷️',
         client: 'Responsiv auksjonsplattform',
         description:
-          'Responsiv og tilgjengelig auksjonsplattform bygget med ren TypeScript og Tailwind CSS, med integrasjon mot Noroff Auction House API v2.',
-        tags: ['TypeScript', 'Tailwind CSS', 'Noroff API v2', 'JWT'],
+          'En spennende markedsplass på nett der samlere og entusiaster kan bla gjennom unike oppføringer, avgi bud og sikre seg verdifulle funn.',
+        tags: ['Auksjon', 'Budgivning', 'Markedsplass', 'Samleobjekter'],
+        thumbnail: '/projects/aution-house.png',
+        link: 'https://auctionn-house.netlify.app/',
       },
-      5: {
+      '5': {
         title: 'Flip Match – Memory Card Game',
         client: 'Interaktivt nettspill',
         description:
-          'Et responsivt huskespill (memory) bygget med React, TypeScript og Tailwind CSS, med jevne interaksjoner og enkle spillmekanikker.',
-        tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
-      },
-      6: {
-        title: 'Rainy Days – Interactive Product Storefronts',
-        client: 'Dynamisk nettbutikk',
-        description:
-          'En dynamisk nettbutikk bygget med ren JavaScript og sanntids produktdata fra et eksternt API.',
-        tags: ['HTML5', 'CSS3', 'JavaScript', 'REST API'],
-      },
-      7: {
-        title: 'Social Media App – Frontend Social Platform',
-        client: 'Sosial interaksjonsapp',
-        description:
-          'Frontend sosiale medier-applikasjon med innleggsadministrasjon, interaksjoner og responsivt design bygget med TypeScript og Vite.',
-        tags: ['TypeScript', 'Tailwind CSS', 'Vite', 'Vitest'],
-      },
-      8: {
-        title: 'Lens of Wanderlust 📸 – Travel Vlog Page',
-        client: 'Reisevlogg-nettside',
-        description:
-          'Responsiv reisevlogg-nettside med API-drevet innhold, videoer og bildebasert historiefortelling.',
-        tags: ['HTML5', 'CSS3', 'JavaScript', 'REST APIs'],
-      },
-      9: {
-        title: 'Square Pumpkin 🤳🏼 – Social Media Platform',
-        client: 'Interaktiv sosial plattform',
-        description:
-          'Interaktiv plattform for sosiale medier med bildedeling, personlige feeder og innebygd kamerafunksjonalitet.',
-        tags: ['HTML5', 'CSS3', 'Tailwind CSS', 'JavaScript'],
-      },
-      10: {
-        title: 'The Community Science Museum: Discover Together',
-        client: 'Pedagogisk museumsenettsted',
-        description:
-          'Interaktiv og responsiv vitenskapsmuseum-nettside designet for barn, familier og lærere.',
-        tags: ['HTML5', 'CSS3', 'JavaScript'],
+          'Et morsomt og engasjerende nettspill designet for å teste hukommelsen og tilby lettbent underholdning for alle aldre.',
+        tags: ['Nettspill', 'Underholdning', 'Interaktivt', 'Familietid'],
+        thumbnail: '/projects/flip-match.png',
+        link: 'https://flip-match-memory.netlify.app/',
       },
     },
   },
@@ -222,7 +191,7 @@ export const no: TranslationDictionary = {
       techStack: {
         question: 'Hvilken teknologistack bruker dere?',
         answer:
-          'Vi bygger primært med React, TypeScript, Vite og Tailwind CSS. For innholdsadministrasjon integrerer vi headless CMS-løsninger ved behov. Alle nettsteder deployes med HTTPS, optimaliseres for ytelse og testes for tilgjengelighet.',
+          'Vi benytter moderne, bransjestandardiserte verktøy og rammeverk for å sikre lynrask ytelse, høy sikkerhet og enkelt vedlikehold. Alle nettsider leveres med HTTPS og optimaliseres fullt ut.',
       },
       timeline: {
         question: 'Hvor lang tid tar et typisk prosjekt?',

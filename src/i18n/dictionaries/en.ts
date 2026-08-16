@@ -90,7 +90,7 @@ export const en: TranslationDictionary = {
       frontend: {
         title: 'Front-end development',
         description:
-          'React, TypeScript, Vite, and Tailwind CSS — modern stacks chosen for developer experience and end-user performance.',
+          'Modern web standards and frameworks chosen for exceptional speed, responsiveness, and user satisfaction.',
       },
       design: {
         title: 'Graphic design',
@@ -125,89 +125,58 @@ export const en: TranslationDictionary = {
   projects: {
     pageTitle: 'Projects',
     pageDescription:
-      'Explore our portfolio of front-end applications, interactive experiences, and digital platforms built with modern web technologies.',
+      'Explore our portfolio of websites, interactive experiences, and digital platforms built for our clients.',
     filterAll: 'All',
     filterWeb: 'Web development',
     filterDesign: 'Design',
     filterEcommerce: 'E-commerce',
-    viewCaseStudy: 'View case study',
+    viewCaseStudy: 'View website',
     noResults: 'No projects match the selected filter.',
     projects: {
-      1: {
+      '1': {
         title: 'Holidaze 🏡',
         client: 'Accommodation Booking Platform',
         description:
-          'Modern accommodation booking platform built with React and TypeScript, featuring venue management, bookings, authentication, and a scalable frontend architecture.',
-        tags: ['React', 'TypeScript', 'Tailwind CSS', 'Zustand', 'Vitest'],
+          'A modern destination for travelers looking to discover, manage, and book unique places to stay with ease and complete peace of mind.',
+        tags: ['Accommodation', 'Tourism', 'Booking Portal', 'Hospitality'],
+        thumbnail: '/projects/holidaze.png',
+        link: 'https://holidaze-booking-hub.netlify.app/',
       },
-      2: {
+      '2': {
         title: 'Online Shop 🛒',
         client: 'Frontend E-commerce Application',
         description:
-          'Frontend e-commerce application built with React and TypeScript, focused on performance, scalability, and a clean user experience.',
-        tags: [
-          'React',
-          'TypeScript',
-          'TanStack Query',
-          'Zustand',
-          'Tailwind CSS',
-        ],
+          'A curated online storefront offering a seamless shopping experience, smooth browsing, and quick checkout for customers on the go.',
+        tags: ['E-commerce', 'Online Store', 'Retail', 'Products'],
+        thumbnail: '/projects/online-shopping.png',
+        link: 'https://online-shopping-master.netlify.app/',
       },
-      3: {
+      '3': {
         title: 'NewsHub 📰',
         client: 'Full-stack News Platform',
         description:
-          'Full-stack news platform built with React, TypeScript, and Tailwind CSS, using Supabase as a Backend-as-a-Service for authentication and database management.',
-        tags: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'PostgreSQL'],
+          'A digital publishing hub delivering up-to-the-minute stories, investigative journalism, and engaging multimedia articles for daily readers.',
+        tags: ['News', 'Articles', 'Media', 'Editorial'],
+        thumbnail: '/projects/news-hub.png',
+        link: 'https://news-hubnet.netlify.app/?q=&page=1',
       },
-      4: {
+      '4': {
         title: 'Auction House 🏷️',
         client: 'Responsive Auction Platform',
         description:
-          'Responsive and accessible auction platform built with Vanilla TypeScript and Tailwind CSS, integrating the Noroff Auction House API v2.',
-        tags: ['TypeScript', 'Tailwind CSS', 'Noroff API v2', 'JWT'],
+          'An exciting online marketplace where collectors and enthusiasts can browse unique listings, place live bids, and secure valuable finds.',
+        tags: ['Auction', 'Bidding', 'Marketplace', 'Collectibles'],
+        thumbnail: '/projects/aution-house.png',
+        link: 'https://auctionn-house.netlify.app/e',
       },
-      5: {
+      '5': {
         title: 'Flip Match – Memory Card Game',
         client: 'Interactive Web Game',
         description:
-          'A responsive memory card matching game built with React, TypeScript, and Tailwind CSS, featuring smooth interactions and simple game mechanics.',
-        tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
-      },
-      6: {
-        title: 'Rainy Days – Interactive Product Storefronts',
-        client: 'Dynamic Online Shop',
-        description:
-          'A dynamic online shop built with vanilla JavaScript and real-time product data from an external API.',
-        tags: ['HTML5', 'CSS3', 'JavaScript', 'REST API'],
-      },
-      7: {
-        title: 'Social Media App – Frontend Social Platform',
-        client: 'Social Interaction App',
-        description:
-          'Frontend social media application with post management, interactions, and responsive design built using TypeScript and Vite.',
-        tags: ['TypeScript', 'Tailwind CSS', 'Vite', 'Vitest'],
-      },
-      8: {
-        title: 'Lens of Wanderlust 📸 – Travel Vlog Page',
-        client: 'Travel Vlog Website',
-        description:
-          'Responsive travel vlog website with API-driven content, videos, and image-based storytelling.',
-        tags: ['HTML5', 'CSS3', 'JavaScript', 'REST APIs'],
-      },
-      9: {
-        title: 'Square Pumpkin 🤳🏼 – Social Media Platform',
-        client: 'Interactive Social Platform',
-        description:
-          'Interactive social media platform with photo sharing, personalized feeds, and built-in camera functionality.',
-        tags: ['HTML5', 'CSS3', 'Tailwind CSS', 'JavaScript'],
-      },
-      10: {
-        title: 'The Community Science Museum: Discover Together',
-        client: 'Educational Museum Website',
-        description:
-          'Interactive and responsive science museum website designed for children, families, and educators.',
-        tags: ['HTML5', 'CSS3', 'JavaScript'],
+          'A fun and engaging casual browser game designed to test memory skills and provide lighthearted entertainment for all ages.',
+        tags: ['Web Game', 'Entertainment', 'Interactive', 'Family'],
+        thumbnail: '/projects/flip-match.png',
+        link: 'https://flip-match-memory.netlify.app/',
       },
     },
   },
@@ -221,7 +190,7 @@ export const en: TranslationDictionary = {
       techStack: {
         question: 'What technology stack do you use?',
         answer:
-          'We primarily build with React, TypeScript, Vite, and Tailwind CSS. For content management we integrate headless CMS solutions when needed. All sites are deployed with HTTPS, optimised for performance, and tested for accessibility.',
+          'We utilize modern, industry-standard web tools and frameworks to ensure lightning-fast performance, high security, and effortless maintenance. All sites are deployed with HTTPS and fully optimized.',
       },
       timeline: {
         question: 'How long does a typical project take?',

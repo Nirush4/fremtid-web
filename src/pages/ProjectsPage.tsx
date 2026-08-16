@@ -9,14 +9,17 @@ import {
 import { ProjectsIllustration } from '../components/illustrations/ProjectsIllustration';
 import type { ProjectCategoryId, ProjectId } from '../types/projects';
 
-// Map string ProjectIds to filter categories
-const PROJECT_CATEGORIES: Record<ProjectId, ProjectCategoryId> = {
-  'nordic-brew': 'web',
-  'fjord-wellness': 'design',
-  'oslo-artisan': 'ecommerce',
-  'bergen-legal': 'web',
-  'trondheim-tech': 'web',
-  'studio-lumiere': 'design',
+// Use Partial<Record<...>> so not all project IDs are strictly required to be listed
+const PROJECT_CATEGORIES: Partial<Record<ProjectId, ProjectCategoryId>> = {
+  '1': 'web',
+  '2': 'ecommerce',
+  '3': 'web',
+  '4': 'ecommerce',
+  '5': 'design',
+  '6': 'web',
+  '7': 'web',
+  '8': 'design',
+  '9': 'web',
 };
 
 export function ProjectsPage() {

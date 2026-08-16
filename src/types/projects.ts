@@ -1,11 +1,5 @@
 /** Portfolio project identifiers. */
-export type ProjectId =
-  | 'nordic-brew'
-  | 'fjord-wellness'
-  | 'oslo-artisan'
-  | 'bergen-legal'
-  | 'trondheim-tech'
-  | 'studio-lumiere';
+export type ProjectId = '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9';
 
 /** Portfolio project category identifiers. */
 export type ProjectCategoryId = 'all' | 'web' | 'design' | 'ecommerce';
@@ -23,4 +17,6 @@ export interface ProjectContent {
   readonly client: string;
   readonly description: string;
   readonly tags: readonly string[];
+  readonly thumbnail: string;
+  readonly link: string;
 }
