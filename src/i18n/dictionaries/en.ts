@@ -17,7 +17,7 @@ export const en: TranslationDictionary = {
     closeMenu: 'Close navigation menu',
   },
   home: {
-    heroTitle: 'Build your digital future with Fremtid Web',
+    heroTitle: 'We build fast, accessible, and user-friendly digital products',
     heroSubtitle:
       'We craft accessible, high-performance websites and brand experiences for Norwegian businesses ready to grow online.',
     heroCta: 'View our packages',
@@ -27,40 +27,51 @@ export const en: TranslationDictionary = {
       'Front-end development and graphic design — delivered as one cohesive team.',
     serviceItems: {
       development: {
-        title: 'Front-end development',
+        title: 'Custom Website & Software Development',
         description:
-          'React, TypeScript, and modern tooling built for speed, maintainability, and WCAG 2.1 AA compliance.',
+          'We build fast, secure, and user-friendly websites and apps tailored to your business goals, ensuring a seamless experience for all users.',
       },
       design: {
-        title: 'Graphic & UI design',
+        title: 'Graphic & Visual Design',
         description:
-          'Brand-aligned layouts, typography, and visual systems that look professional on every device.',
+          'Clean layouts, professional typography, and eye-catching designs that build trust with your customers on any device.',
       },
       maintenance: {
-        title: 'Launch & support',
+        title: 'Launch & Ongoing Support',
         description:
-          'Domain setup, SSL, deployment, and post-launch support so your site stays secure and up to date.',
+          'We handle domain setup, secure SSL certificates, publishing, and regular updates so your website always runs smoothly and safely.',
       },
     },
+    techForAll: {
+      tag: 'For small & medium businesses',
+      title: 'Technology available to everyone',
+      description1:
+        'Fremtid Web was founded with a clear vision: to lower the barrier for small and mid-sized businesses looking for modern, professional websites—regardless of company size.',
+      description2:
+        'Great digital solutions should not be reserved for enterprises with large budgets. We offer flexible packages tailored for local businesses and service providers with uncompromised quality and transparent pricing.',
+      description3:
+        'Whether you run a local café, salon, boutique, or consulting firm, we help you stand out and thrive in the digital space.',
+    },
     featuredHeading: 'Featured projects',
-    featuredSubheading: 'A selection of recent work from the Fremtid Web portfolio.',
+    featuredSubheading:
+      'A selection of recent front-end work from the Fremtid Web portfolio.',
     viewAllProjects: 'View all projects',
     trustHeading: 'Why businesses choose us',
     trustItems: {
       accessible: {
-        title: 'Accessibility first',
+        title: 'Easy to use for everyone',
         description:
-          'Every site we build meets WCAG 2.1 AA — semantic HTML, keyboard navigation, and strong contrast.',
+          'Our websites are designed to work seamlessly for all visitors, whether they use a mobile phone, computer, or require assistive technologies.',
       },
       transparent: {
-        title: 'Transparent pricing',
+        title: 'Fixed and honest pricing',
         description:
-          'Clear package tiers with no hidden fees. You always know what is included before we start.',
+          'No hidden costs or nasty surprises. You always know exactly what you are paying for before we start.',
       },
       local: {
-        title: 'Norwegian & English',
+        title: 'Tailored to the local market',
         description:
-          'Bilingual communication and multi-language site support for businesses serving diverse audiences.',
+          'We communicate clearly and can help you with both Norwegian and English content so you reach your exact target audience.',
       },
     },
   },
@@ -79,7 +90,7 @@ export const en: TranslationDictionary = {
       frontend: {
         title: 'Front-end development',
         description:
-          'React, TypeScript, Vite, and Tailwind CSS — modern stacks chosen for developer experience and end-user performance.',
+          'Modern web standards and frameworks chosen for exceptional speed, responsiveness, and user satisfaction.',
       },
       design: {
         title: 'Graphic design',
@@ -114,55 +125,58 @@ export const en: TranslationDictionary = {
   projects: {
     pageTitle: 'Projects',
     pageDescription:
-      'Explore our portfolio of websites and design work for businesses across Norway.',
+      'Explore our portfolio of websites, interactive experiences, and digital platforms built for our clients.',
     filterAll: 'All',
     filterWeb: 'Web development',
     filterDesign: 'Design',
     filterEcommerce: 'E-commerce',
-    viewCaseStudy: 'View case study',
+    viewCaseStudy: 'View website',
     noResults: 'No projects match the selected filter.',
     projects: {
-      'nordic-brew': {
-        title: 'Nordic Brew Co.',
-        client: 'Craft brewery, Oslo',
+      '1': {
+        title: 'Holidaze 🏡',
+        client: 'Accommodation Booking Platform',
         description:
-          'A responsive brand site with product catalogue, taproom events, and online ordering integration.',
-        tags: ['React', 'CMS', 'Brand design'],
+          'A modern destination for travelers looking to discover, manage, and book unique places to stay with ease and complete peace of mind.',
+        tags: ['Accommodation', 'Tourism', 'Booking Portal', 'Hospitality'],
+        thumbnail: '/projects/holidaze.png',
+        link: 'https://holidaze-booking-hub.netlify.app/',
       },
-      'fjord-wellness': {
-        title: 'Fjord Wellness',
-        client: 'Health studio, Bergen',
+      '2': {
+        title: 'Online Shop 🛒',
+        client: 'Frontend E-commerce Application',
         description:
-          'Calming visual identity and booking-focused landing pages for a wellness centre.',
-        tags: ['UI/UX', 'Booking', 'Accessibility'],
+          'A curated online storefront offering a seamless shopping experience, smooth browsing, and quick checkout for customers on the go.',
+        tags: ['E-commerce', 'Online Store', 'Retail', 'Products'],
+        thumbnail: '/projects/online-shopping.png',
+        link: 'https://online-shopping-master.netlify.app/',
       },
-      'oslo-artisan': {
-        title: 'Oslo Artisan Market',
-        client: 'Online marketplace',
+      '3': {
+        title: 'NewsHub 📰',
+        client: 'Full-stack News Platform',
         description:
-          'Multi-vendor e-commerce platform with product filters, vendor profiles, and secure checkout.',
-        tags: ['E-commerce', 'Stripe', 'Multi-vendor'],
+          'A digital publishing hub delivering up-to-the-minute stories, investigative journalism, and engaging multimedia articles for daily readers.',
+        tags: ['News', 'Articles', 'Media', 'Editorial'],
+        thumbnail: '/projects/news-hub.png',
+        link: 'https://news-hubnet.netlify.app/?q=&page=1',
       },
-      'bergen-legal': {
-        title: 'Bergen Legal Partners',
-        client: 'Law firm, Bergen',
+      '4': {
+        title: 'Auction House 🏷️',
+        client: 'Responsive Auction Platform',
         description:
-          'Professional corporate site with practice area pages, team profiles, and contact forms.',
-        tags: ['Corporate', 'SEO', 'Forms'],
+          'An exciting online marketplace where collectors and enthusiasts can browse unique listings, place live bids, and secure valuable finds.',
+        tags: ['Auction', 'Bidding', 'Marketplace', 'Collectibles'],
+        thumbnail: '/projects/aution-house.png',
+        link: 'https://auctionn-house.netlify.app/e',
       },
-      'trondheim-tech': {
-        title: 'Trondheim Tech Hub',
-        client: 'Coworking space',
+      '5': {
+        title: 'Flip Match – Memory Card Game',
+        client: 'Interactive Web Game',
         description:
-          'Dynamic site showcasing membership plans, event calendar, and community highlights.',
-        tags: ['Events', 'Membership', 'React'],
-      },
-      'studio-lumiere': {
-        title: 'Studio Lumière',
-        client: 'Photography studio',
-        description:
-          'Portfolio-driven design with fullscreen galleries and a minimal, editorial aesthetic.',
-        tags: ['Portfolio', 'Gallery', 'Brand'],
+          'A fun and engaging casual browser game designed to test memory skills and provide lighthearted entertainment for all ages.',
+        tags: ['Web Game', 'Entertainment', 'Interactive', 'Family'],
+        thumbnail: '/projects/flip-match.png',
+        link: 'https://flip-match-memory.netlify.app/',
       },
     },
   },
@@ -176,7 +190,7 @@ export const en: TranslationDictionary = {
       techStack: {
         question: 'What technology stack do you use?',
         answer:
-          'We primarily build with React, TypeScript, Vite, and Tailwind CSS. For content management we integrate headless CMS solutions when needed. All sites are deployed with HTTPS, optimised for performance, and tested for accessibility.',
+          'We utilize modern, industry-standard web tools and frameworks to ensure lightning-fast performance, high security, and effortless maintenance. All sites are deployed with HTTPS and fully optimized.',
       },
       timeline: {
         question: 'How long does a typical project take?',

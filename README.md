@@ -1,32 +1,30 @@
-# React + TypeScript + Vite
+# Fremtid Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> Programvareutvikling og design for voksende bedrifter
 
-Currently, two official plugins are available:
+Fremtid Web leverer moderne, raske og tilgjengelige digitale løsninger for små og mellomstore bedrifter. Vi kombinerer solid frontend-utvikling med gjennomtenkt visuelt design for å skape merkevareopplevelser som skaper vekst.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Om Prosjektet
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Dette repositoryet inneholder kildekoden for nettsiden og applikasjonen til Fremtid Web, bygget med moderne webteknologier med fokus på ytelse, responsivt design og WCAG 2.1 AA-tilgjengelighet.
 
-## Expanding the Oxlint configuration
+### 🛠️ Teknologistack
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- **Frontend:** React, TypeScript, Vite, Tailwind CSS
+- **Routing:** React Router DOM
+- **Språkstøtte:** Flerspråklig (Norsk / Engelsk)
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+---
+
+## 📁 Prosjektstruktur
+
+```text
+src/
+├── components/       # Gjenbrukbare UI-komponenter, seksjoner og layout
+├── context/          # React Context (f.eks. LanguageContext for i18n)
+├── data/             # Statisk data for prosjekter, tjenester og elementer
+├── types/            # TypeScript types / grensesnitt for oversettelser og modeller
+└── ...
 ```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
