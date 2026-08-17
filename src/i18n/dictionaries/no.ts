@@ -75,6 +75,39 @@ export const no: TranslationDictionary = {
           'Vi snakker språket ditt og kan hjelpe deg med både norsk og engelsk innhold, slik at du når akkurat de kundene du ønsker.',
       },
     },
+    contactSection: {
+      tag: 'Ta kontakt',
+      title: 'Klar for å løfte bedriften din på nett?',
+      description:
+        'Send oss en melding i dag for en uforpliktende prat om ditt neste prosjekt.',
+      nameLabel: 'Fullt navn',
+      namePlaceholder: 'Fullt navn',
+      emailLabel: 'E-postadresse',
+      emailPlaceholder: 'E-postadresse',
+      phoneLabel: 'Mobilnummer',
+      phonePlaceholder: 'Mobilnummer',
+      packageLabel: 'Velg pakke',
+      packagePlaceholder: 'Velg din pakke',
+      packageOptions: {
+        starter: 'Starterpakke',
+        growth: 'Vekstpakken',
+        complete: 'Komplett-pakken',
+      },
+      messageLabel: 'Beskriv prosjektet ditt',
+      messagePlaceholder: 'Beskriv prosjektet ditt',
+      submitButton: 'Send melding',
+      submittingButton: 'Sender...',
+      successMessage:
+        'Takk for meldingen! Vi tar kontakt med deg innen to virkedager.',
+      errors: {
+        nameRequired: 'Vennligst skriv inn ditt fulle navn.',
+        emailInvalid: 'Vennligst skriv inn en gyldig e-postadresse.',
+        phoneRequired: 'Vennligst skriv inn mobilnummeret ditt.',
+        packageRequired: 'Vennligst velg en pakke.',
+        messageRequired: 'Beskrivelsen kan ikke være tom.',
+        messageMin: 'Beskrivelsen må være på minst 10 tegn.',
+      },
+    },
   },
   about: {
     pageTitle: 'Om Fremtid Web',
@@ -241,7 +274,7 @@ export const no: TranslationDictionary = {
         name: 'Starterpakke',
         description:
           'En profesjonell nettprofil for små bedrifter og enkeltgründere som kommer i gang.',
-        price: 'Fra 25 000 NOK',
+        price: 'Fra 2990 NOK',
         priceNote: 'Engangsprosjekthonorar',
         features: [
           'Opptil 5 sider',
@@ -255,7 +288,7 @@ export const no: TranslationDictionary = {
         name: 'Vekstpakke',
         description:
           'For etablerte bedrifter som er klare for mer innhold og integrasjoner.',
-        price: 'Fra 45 000 NOK',
+        price: 'Fra 5990 NOK',
         priceNote: 'Engangsprosjekthonorar',
         features: [
           'Opptil 12 sider',
@@ -270,7 +303,7 @@ export const no: TranslationDictionary = {
         name: 'Komplett / Enterprise-pakke',
         description:
           'Helhetlige løsninger for komplekse behov, flerspråklige nettsteder og langsiktige samarbeid.',
-        price: 'Tilpasset pris',
+        price: 'Fra9990 NOK',
         priceNote: 'Skreddersydd etter omfang',
         features: [
           'Ubegrenset antall sider og seksjoner',

@@ -74,6 +74,39 @@ export const en: TranslationDictionary = {
           'We communicate clearly and can help you with both Norwegian and English content so you reach your exact target audience.',
       },
     },
+    contactSection: {
+      tag: 'Get in touch',
+      title: 'Ready to grow your business online?',
+      description:
+        'Send us a message today for a friendly, no-obligation chat about your next project.',
+      nameLabel: 'Full name',
+      namePlaceholder: 'Full name',
+      emailLabel: 'Email address',
+      emailPlaceholder: 'Email address',
+      phoneLabel: 'Mobile number',
+      phonePlaceholder: 'Mobile number',
+      packageLabel: 'Choose package',
+      packagePlaceholder: 'Choose your package',
+      packageOptions: {
+        starter: 'Starter pack',
+        growth: 'The growth package',
+        complete: 'The complete package',
+      },
+      messageLabel: 'Describe your project',
+      messagePlaceholder: 'Describe your project',
+      submitButton: 'Send message',
+      submittingButton: 'Sending...',
+      successMessage:
+        'Thank you for your message! We will get back to you within two business days.',
+      errors: {
+        nameRequired: 'Please enter your full name.',
+        emailInvalid: 'Please enter a valid email address.',
+        phoneRequired: 'Please enter your mobile number.',
+        packageRequired: 'Please choose a package.',
+        messageRequired: 'Description cannot be empty.',
+        messageMin: 'Description must be at least 10 characters long.',
+      },
+    },
   },
   about: {
     pageTitle: 'About Fremtid Web',
@@ -240,7 +273,7 @@ export const en: TranslationDictionary = {
         name: 'Starter Pack',
         description:
           'A polished online presence for small businesses and solo founders getting started.',
-        price: 'From 25 000 NOK',
+        price: 'From 2990 NOK',
         priceNote: 'One-time project fee',
         features: [
           'Up to 5 pages',
@@ -254,7 +287,7 @@ export const en: TranslationDictionary = {
         name: 'Growth Package',
         description:
           'For established businesses ready to scale with richer content and integrations.',
-        price: 'From 45 000 NOK',
+        price: 'From 5990 NOK',
         priceNote: 'One-time project fee',
         features: [
           'Up to 12 pages',
@@ -269,7 +302,7 @@ export const en: TranslationDictionary = {
         name: 'Complete / Enterprise Package',
         description:
           'Full-service builds for complex requirements, multi-language sites, and long-term partnerships.',
-        price: 'Custom pricing',
+        price: 'From 9990 NOK',
         priceNote: 'Tailored to your scope',
         features: [
           'Unlimited pages & sections',
