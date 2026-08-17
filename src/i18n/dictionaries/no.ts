@@ -17,7 +17,8 @@ export const no: TranslationDictionary = {
     closeMenu: 'Lukk navigasjonsmeny',
   },
   home: {
-    heroTitle: 'Bygg din digitale fremtid med Fremtid Web',
+    heroTitle:
+      'Vi bygger raske, tilgjengelige og brukervennlige digitale produkter',
     heroSubtitle:
       'Vi lager tilgjengelige, høyytelses nettsteder og merkevareopplevelser for norske bedrifter som er klare for vekst på nett.',
     heroCta: 'Se våre pakker',
@@ -27,40 +28,51 @@ export const no: TranslationDictionary = {
       'Frontend-utvikling og grafisk design — levert av ett samlet team.',
     serviceItems: {
       development: {
-        title: 'Frontend-utvikling',
+        title: 'Skreddersydd nettside og programvareutvikling',
         description:
-          'React, TypeScript og moderne verktøy bygget for hastighet, vedlikeholdbarhet og WCAG 2.1 AA-samsvar.',
+          'Vi bygger raske, sikre og brukervennlige nettsider og apper tilpasset din bedrift, med fokus på at alt skal fungere knirkefritt for alle brukere.',
       },
       design: {
-        title: 'Grafisk og UI-design',
+        title: 'Grafisk og visuelt design',
         description:
-          'Merkevaretilpassede layouter, typografi og visuelle systemer som ser profesjonelle ut på alle enheter.',
+          'Gjennomtenkte oppsett, god typografi og tiltalende design som bygger tillit hos kundene dine på alle enheter.',
       },
       maintenance: {
-        title: 'Lansering og støtte',
+        title: 'Lansering og oppfølging',
         description:
-          'Domeneoppsett, SSL, publisering og støtte etter lansering slik at nettstedet ditt forblir sikkert og oppdatert.',
+          'Vi ordner alt fra domene og sikre SSL-sertifikater til publisering og drift, slik at nettsiden din alltid er trygg og oppdatert.',
       },
     },
+    techForAll: {
+      tag: 'For små og mellomstore bedrifter',
+      title: 'Teknologi tilgjengelig for alle',
+      description1:
+        'Fremtid Web ble startet med én klar visjon: å senke terskelen for små og mellomstore bedrifter som ønsker moderne og profesjonelle nettsider, uavhengig av bedriftens størrelse.',
+      description2:
+        'Gode digitale løsninger skal ikke være forbeholdt aktører med store budsjetter. Vi leverer fleksible pakker skreddersydd for lokale aktører og tjenesteytere med full kvalitet og transparente priser.',
+      description3:
+        'Enten du driver kafé, frisørsalong, konsulentvirksomhet eller et lokalt foretak – vi hjelper deg å bli synlig og ta del i den digitale hverdagen.',
+    },
     featuredHeading: 'Utvalgte prosjekter',
-    featuredSubheading: 'Et utvalg av nylig arbeid fra Fremtid Web-porteføljen.',
+    featuredSubheading:
+      'Et utvalg av nylig frontend-arbeid fra Fremtid Web-porteføljen.',
     viewAllProjects: 'Se alle prosjekter',
     trustHeading: 'Hvorfor bedrifter velger oss',
     trustItems: {
       accessible: {
-        title: 'Tilgjengelighet først',
+        title: 'Enkle å bruke for alle',
         description:
-          'Hvert nettsted vi bygger oppfyller WCAG 2.1 AA — semantisk HTML, tastaturnavigasjon og god kontrast.',
+          'Nettsidene våre er laget slik at de fungerer utmerket for alle besøkende, uansett om de bruker mobil, PC, eller trenger ekstra hjelpemidler.',
       },
       transparent: {
-        title: 'Transparent prising',
+        title: 'Faste og ærlige priser',
         description:
-          'Tydelige pakkenivåer uten skjulte kostnader. Du vet alltid hva som er inkludert før vi starter.',
+          'Ingen skjulte kostnader eller ubehagelige overraskelser. Du vet alltid nøyaktig hva du betaler for før vi setter i gang.',
       },
       local: {
-        title: 'Norsk og engelsk',
+        title: 'Tilpasset det norske markedet',
         description:
-          'Tospråklig kommunikasjon og flerspråklig nettstedsstøtte for bedrifter med ulike målgrupper.',
+          'Vi snakker språket ditt og kan hjelpe deg med både norsk og engelsk innhold, slik at du når akkurat de kundene du ønsker.',
       },
     },
   },
@@ -79,7 +91,7 @@ export const no: TranslationDictionary = {
       frontend: {
         title: 'Frontend-utvikling',
         description:
-          'React, TypeScript, Vite og Tailwind CSS — moderne teknologi valgt for utvikleropplevelse og sluttbrukerytelse.',
+          'Moderne webstandarder og rammeverk valgt for eksepsjonell hastighet, responsivitet og brukertilfredshet.',
       },
       design: {
         title: 'Grafisk design',
@@ -114,55 +126,58 @@ export const no: TranslationDictionary = {
   projects: {
     pageTitle: 'Prosjekter',
     pageDescription:
-      'Utforsk porteføljen vår med nettsteder og designarbeid for bedrifter over hele Norge.',
+      'Utforsk porteføljen vår av nettsider, interaktive opplevelser og digitale plattformer bygget for våre oppdragsgivere.',
     filterAll: 'Alle',
     filterWeb: 'Webutvikling',
     filterDesign: 'Design',
     filterEcommerce: 'E-handel',
-    viewCaseStudy: 'Se casestudie',
+    viewCaseStudy: 'Se nettsiden',
     noResults: 'Ingen prosjekter matcher det valgte filteret.',
     projects: {
-      'nordic-brew': {
-        title: 'Nordic Brew Co.',
-        client: 'Håndverksbryggeri, Oslo',
+      '1': {
+        title: 'Holidaze 🏡',
+        client: 'Overnattings- og bookingplattform',
         description:
-          'Et responsivt merkevarenettsted med produktkatalog, taproom-arrangementer og integrert nettbestilling.',
-        tags: ['React', 'CMS', 'Merkevaredesign'],
+          'En moderne destinasjon for reisende som ønsker å oppdage, administrere og bestille unike overnattingssteder med enkelhet og full trygghet.',
+        tags: ['Overnatting', 'Reiseliv', 'Bookingportal', 'Resepsjon'],
+        thumbnail: '/projects/holidaze.png',
+        link: 'https://holidaze-booking-hub.netlify.app/',
       },
-      'fjord-wellness': {
-        title: 'Fjord Wellness',
-        client: 'Helsestudio, Bergen',
+      '2': {
+        title: 'Online Shop 🛒',
+        client: 'Frontend e-handelsapplikasjon',
         description:
-          'Roelig visuell identitet og bookingsfokuserte landingssider for et velværesenter.',
-        tags: ['UI/UX', 'Booking', 'Tilgjengelighet'],
+          'En gjennomført nettbutikk som tilbyr en sømløs handleopplevelse, smidig navigasjon og rask utsjekking for kunder på farten.',
+        tags: ['E-handel', 'Nettbutikk', 'Detaljhandel', 'Produkter'],
+        thumbnail: '/projects/online-shopping.png',
+        link: 'https://online-shopping-master.netlify.app/',
       },
-      'oslo-artisan': {
-        title: 'Oslo Artisan Market',
-        client: 'Nettbasert markedsplass',
+      '3': {
+        title: 'NewsHub 📰',
+        client: 'Fullstack nyhetsplattform',
         description:
-          'Flerleverandør e-handelsplattform med produktfiltre, leverandørprofiler og sikker kasse.',
-        tags: ['E-handel', 'Stripe', 'Flerleverandør'],
+          'Et digitalt publiseringsnav som leverer dagsaktuelle historier, undersøkende journalistikk og engasjerende multimedieartikler for daglige lesere.',
+        tags: ['Nyheter', 'Artikler', 'Media', 'Redaksjonelt'],
+        thumbnail: '/projects/news-hub.png',
+        link: 'https://news-hubnet.netlify.app/?q=&page=1',
       },
-      'bergen-legal': {
-        title: 'Bergen Legal Partners',
-        client: 'Advokatfirma, Bergen',
+      '4': {
+        title: 'Auction House 🏷️',
+        client: 'Responsiv auksjonsplattform',
         description:
-          'Profesjonelt bedriftsnettsted med fagområdesider, teamprofiler og kontaktskjemaer.',
-        tags: ['Bedrift', 'SEO', 'Skjemaer'],
+          'En spennende markedsplass på nett der samlere og entusiaster kan bla gjennom unike oppføringer, avgi bud og sikre seg verdifulle funn.',
+        tags: ['Auksjon', 'Budgivning', 'Markedsplass', 'Samleobjekter'],
+        thumbnail: '/projects/aution-house.png',
+        link: 'https://auctionn-house.netlify.app/',
       },
-      'trondheim-tech': {
-        title: 'Trondheim Tech Hub',
-        client: 'Coworking-space',
+      '5': {
+        title: 'Flip Match – Memory Card Game',
+        client: 'Interaktivt nettspill',
         description:
-          'Dynamisk nettsted som viser medlemskap, arrangementskalender og fellesskapshøydepunkter.',
-        tags: ['Arrangementer', 'Medlemskap', 'React'],
-      },
-      'studio-lumiere': {
-        title: 'Studio Lumière',
-        client: 'Fotografistudio',
-        description:
-          'Porteføljedrevet design med fullskjermsgallerier og et minimalt, redaksjonelt uttrykk.',
-        tags: ['Portefølje', 'Galleri', 'Merkevare'],
+          'Et morsomt og engasjerende nettspill designet for å teste hukommelsen og tilby lettbent underholdning for alle aldre.',
+        tags: ['Nettspill', 'Underholdning', 'Interaktivt', 'Familietid'],
+        thumbnail: '/projects/flip-match.png',
+        link: 'https://flip-match-memory.netlify.app/',
       },
     },
   },
@@ -176,7 +191,7 @@ export const no: TranslationDictionary = {
       techStack: {
         question: 'Hvilken teknologistack bruker dere?',
         answer:
-          'Vi bygger primært med React, TypeScript, Vite og Tailwind CSS. For innholdsadministrasjon integrerer vi headless CMS-løsninger ved behov. Alle nettsteder deployes med HTTPS, optimaliseres for ytelse og testes for tilgjengelighet.',
+          'Vi benytter moderne, bransjestandardiserte verktøy og rammeverk for å sikre lynrask ytelse, høy sikkerhet og enkelt vedlikehold. Alle nettsider leveres med HTTPS og optimaliseres fullt ut.',
       },
       timeline: {
         question: 'Hvor lang tid tar et typisk prosjekt?',
