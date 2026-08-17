@@ -60,19 +60,19 @@ export const no: TranslationDictionary = {
     trustHeading: 'Hvorfor bedrifter velger oss',
     trustItems: {
       accessible: {
-        title: 'Tilgjengelighet først',
+        title: 'Enkle å bruke for alle',
         description:
-          'Hvert nettsted vi bygger oppfyller WCAG 2.1 AA — semantisk HTML, tastaturnavigasjon og god kontrast.',
+          'Nettsidene våre er laget slik at de fungerer utmerket for alle besøkende, uansett om de bruker mobil, PC, eller trenger ekstra hjelpemidler.',
       },
       transparent: {
-        title: 'Transparent prising',
+        title: 'Faste og ærlige priser',
         description:
-          'Tydelige pakkenivåer uten skjulte kostnader. Du vet alltid hva som er inkludert før vi starter.',
+          'Ingen skjulte kostnader eller ubehagelige overraskelser. Du vet alltid nøyaktig hva du betaler for før vi setter i gang.',
       },
       local: {
-        title: 'Norsk og engelsk',
+        title: 'Tilpasset det norske markedet',
         description:
-          'Tospråklig kommunikasjon og flerspråklig nettstedsstøtte for bedrifter med ulike målgrupper.',
+          'Vi snakker språket ditt og kan hjelpe deg med både norsk og engelsk innhold, slik at du når akkurat de kundene du ønsker.',
       },
     },
   },

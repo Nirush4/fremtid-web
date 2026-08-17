@@ -59,19 +59,19 @@ export const en: TranslationDictionary = {
     trustHeading: 'Why businesses choose us',
     trustItems: {
       accessible: {
-        title: 'Accessibility first',
+        title: 'Easy to use for everyone',
         description:
-          'Every site we build meets WCAG 2.1 AA — semantic HTML, keyboard navigation, and strong contrast.',
+          'Our websites are designed to work seamlessly for all visitors, whether they use a mobile phone, computer, or require assistive technologies.',
       },
       transparent: {
-        title: 'Transparent pricing',
+        title: 'Fixed and honest pricing',
         description:
-          'Clear package tiers with no hidden fees. You always know what is included before we start.',
+          'No hidden costs or nasty surprises. You always know exactly what you are paying for before we start.',
       },
       local: {
-        title: 'Norwegian & English',
+        title: 'Tailored to the local market',
         description:
-          'Bilingual communication and multi-language site support for businesses serving diverse audiences.',
+          'We communicate clearly and can help you with both Norwegian and English content so you reach your exact target audience.',
       },
     },
   },
