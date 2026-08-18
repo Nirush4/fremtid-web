@@ -39,7 +39,7 @@ export function CoreInclusionsBanner({
         </header>
       )}
 
-      <ul className='grid max-w-5xl gap-8 mx-auto sm:grid-cols-3'>
+      <ul className='grid max-w-5xl gap-8 mx-auto md:grid-cols-3'>
         {CORE_INCLUSIONS.map(({ id }) => {
           const Icon = INCLUSION_ICONS[id];
           const content = t.services.coreInclusions[id];

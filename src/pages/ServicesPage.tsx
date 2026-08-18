@@ -64,18 +64,25 @@ export function ServicesPage() {
         </div>
       </section>
 
-      <section className='px-4 py-16 bg-surface sm:px-6'>
+      <section className='px-6 py-20 bg-warm-beige/50 sm:px-10 lg:py-28'>
         <div className='max-w-6xl mx-auto'>
-          <SectionWithIllustration
-            heading={t.services.processHeading}
-            headingId='services-process-heading'
-            subheading={t.services.processSubheading}
-            illustration={<ProcessIllustration />}
-            illustrationLabel='Project workflow process illustration'
-            reverse
-          >
+          <div className='max-w-3xl mb-12 lg:mb-16'>
+            <div className='w-12 h-1 mb-4 rounded-full bg-terra-cotta' />
+            <h2
+              id='services-process-heading'
+              className='text-2xl font-bold text-dark-chocolate sm:text-3xl'
+            >
+              {t.services.processHeading}
+            </h2>
+            <p className='mt-4 text-lg leading-relaxed text-dark-chocolate/80'>
+              {t.services.processSubheading}
+            </p>
+          </div>
+
+          <div className='relative p-6 overflow-hidden border shadow-sm bg-surface rounded-3xl border-dark-chocolate/5 sm:p-12'>
+            <div className='absolute top-0 right-0 w-64 h-64 -mt-20 -mr-20 rounded-full pointer-events-none bg-terra-cotta/5 blur-2xl' />
             <ProcessTimeline embedded />
-          </SectionWithIllustration>
+          </div>
         </div>
       </section>
 

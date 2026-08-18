@@ -101,18 +101,11 @@ export function SectionWithIllustration({
   heading,
   headingId,
   subheading,
-  illustration,
-  svgUrl,
-  illustrationLabel,
+
   children,
-  reverse = false,
 }: SectionWithIllustrationProps) {
   return (
-    <div
-      className={`mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-16 ${
-        reverse ? 'lg:[&>*:first-child]:order-2' : ''
-      }`}
-    >
+    <div className={`mx-auto grid max-w-6xl items-center gap-10  `}>
       <div>
         <h2
           id={headingId}
@@ -127,13 +120,6 @@ export function SectionWithIllustration({
         )}
         <div className='mt-8'>{children}</div>
       </div>
-      <IllustrationFrame
-        label={illustrationLabel}
-        svgUrl={svgUrl}
-        className='lg:justify-self-center'
-      >
-        {illustration}
-      </IllustrationFrame>
     </div>
   );
 }
