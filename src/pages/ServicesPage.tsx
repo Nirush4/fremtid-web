@@ -4,11 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { CoreInclusionsBanner } from '../components/services/CoreInclusionsBanner';
 import { PackageTierCard } from '../components/services/PackageTierCard';
 import { ProcessTimeline } from '../components/services/ProcessTimeline';
-import {
-  PageIntro,
-  SectionWithIllustration,
-} from '../components/ui/IllustrationFrame';
-import { ProcessIllustration } from '../components/illustrations/ProcessIllustration';
+import { PageIntro } from '../components/ui/IllustrationFrame';
 
 export function ServicesPage() {
   const { t } = useLanguage();
@@ -64,7 +60,7 @@ export function ServicesPage() {
         </div>
       </section>
 
-      <section className='px-6 py-20 bg-warm-beige/50 sm:px-10 lg:py-28'>
+      <section className='px-4 py-16 sm:px-6 bg-warm-beige/50'>
         <div className='max-w-6xl mx-auto'>
           <div className='max-w-3xl mb-12 lg:mb-16'>
             <div className='w-12 h-1 mb-4 rounded-full bg-terra-cotta' />
@@ -86,20 +82,42 @@ export function ServicesPage() {
         </div>
       </section>
 
-      <section className='px-4 py-16 bg-warm-beige sm:px-6'>
-        <div className='max-w-2xl mx-auto text-center'>
-          <h2 className='text-2xl font-bold text-dark-chocolate'>
+      <section className='px-6 py-16 bg-warm-beige/30 sm:px-10 '>
+        <div className='max-w-4xl mx-auto text-center'>
+          <div className='flex justify-center mb-10'>
+            <div className='w-16 h-1.5 rounded-full bg-terra-cotta' />
+          </div>
+
+          <h2 className='text-3xl font-extrabold tracking-tighter text-dark-chocolate sm:text-5xl lg:text-6xl'>
             {t.services.contactUs}
           </h2>
-          <p className='mt-3 text-base leading-relaxed text-dark-chocolate'>
+
+          <p className='max-w-2xl mx-auto mt-6 text-lg leading-relaxed sm:text-xl text-dark-chocolate/70'>
             {t.brand.tagline}
           </p>
-          <Link
-            to='/faq'
-            className='inline-flex items-center justify-center px-8 py-3 mt-6 text-sm font-semibold rounded-lg min-h-11 bg-terra-cotta text-dark-chocolate hover:bg-dark-chocolate hover:text-surface'
-          >
-            {t.services.contactUs}
-          </Link>
+
+          {/* Premium Pill Button with inline SVG arrow */}
+          <div className='mt-12'>
+            <Link
+              to='/contact'
+              className='inline-flex items-center justify-center px-10 py-4 text-base font-bold tracking-wide uppercase transition-all duration-300 rounded-full shadow-xl group bg-dark-chocolate text-surface hover:bg-terra-cotta hover:scale-105 shadow-dark-chocolate/10'
+            >
+              {t.services.contactUs}
+              <svg
+                className='w-5 h-5 ml-3 -mr-1 transition-transform duration-300 group-hover:translate-x-1'
+                fill='none'
+                stroke='currentColor'
+                viewBox='0 0 24 24'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
+                  d='M14 5l7 7m0 0l-7 7m7-7H3'
+                />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
     </>

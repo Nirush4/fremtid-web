@@ -21,9 +21,7 @@ export function CoreInclusionsBanner({
   return (
     <div
       aria-labelledby={embedded ? undefined : 'core-inclusions-heading'}
-      className={
-        embedded ? '' : 'px-6 py-10 rounded-2xl bg-warm-beige sm:px-10'
-      }
+      className={embedded ? '' : 'rounded-2xl bg-warm-beige '}
     >
       {!embedded && (
         <header className='max-w-2xl mx-auto mb-12 text-center'>
