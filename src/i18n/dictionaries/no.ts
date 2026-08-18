@@ -278,7 +278,7 @@ export const no: TranslationDictionary = {
         priceNote: 'Engangsprosjekthonorar',
         features: [
           '1 skreddersydd nettsidelayout',
-          'Lynrask, mobilvennlig responsiv design',
+          'Rask, mobilvennlig responsiv design',
           'Integrert sikkert kontaktskjema',
           'Grunnleggende teknisk SEO-konfigurasjon',
           'Tilpasset merkevaretypografi',

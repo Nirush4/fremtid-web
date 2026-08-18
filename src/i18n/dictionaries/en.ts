@@ -277,7 +277,7 @@ export const en: TranslationDictionary = {
         priceNote: 'One-time project fee',
         features: [
           '1 landing page layout',
-          'Lightning-fast, mobile-first design',
+          'Fast and mobile-first design',
           'Integrated secure contact form',
           'Essential technical SEO configuration',
           'Custom brand typography pairing',

@@ -1,7 +1,8 @@
 import type { ReactNode } from 'react';
 
 interface IllustrationFrameProps {
-  readonly children: ReactNode;
+  readonly children?: ReactNode;
+  readonly svgUrl?: string;
   readonly label?: string;
   readonly className?: string;
 }
@@ -9,6 +10,7 @@ interface IllustrationFrameProps {
 /** Responsive container for decorative SVG illustrations. */
 export function IllustrationFrame({
   children,
+  svgUrl,
   label,
   className = '',
 }: IllustrationFrameProps) {
@@ -18,9 +20,17 @@ export function IllustrationFrame({
       aria-hidden={label ? undefined : true}
       aria-label={label}
     >
-      <div className='aspect-[4/3] w-full  p-4 sm:p-6'>
+      <div className='aspect-[4/3] w-full'>
         <div className='flex items-center justify-center w-full h-full'>
-          {children}
+          {svgUrl ? (
+            <img
+              src={svgUrl}
+              alt={label || ''}
+              className='object-contain w-full h-full'
+            />
+          ) : (
+            children
+          )}
         </div>
       </div>
     </figure>
@@ -31,7 +41,8 @@ interface PageIntroProps {
   readonly title: string;
   readonly titleId: string;
   readonly description: string;
-  readonly illustration: ReactNode;
+  readonly illustration?: ReactNode;
+  readonly svgUrl?: string;
   readonly illustrationLabel?: string;
   readonly children?: ReactNode;
   readonly align?: 'center' | 'start';
@@ -43,6 +54,7 @@ export function PageIntro({
   titleId,
   description,
   illustration,
+  svgUrl,
   illustrationLabel,
   children,
   align = 'start',
@@ -66,17 +78,19 @@ export function PageIntro({
         </p>
         {children && <div className='mt-8'>{children}</div>}
       </div>
-      <IllustrationFrame label={illustrationLabel}>
+      <IllustrationFrame label={illustrationLabel} svgUrl={svgUrl}>
         {illustration}
       </IllustrationFrame>
     </div>
   );
 }
+
 interface SectionWithIllustrationProps {
   readonly heading: string;
   readonly headingId: string;
   readonly subheading?: string;
-  readonly illustration: ReactNode;
+  readonly illustration?: ReactNode;
+  readonly svgUrl?: string;
   readonly illustrationLabel?: string;
   readonly children: ReactNode;
   readonly reverse?: boolean;
@@ -88,6 +102,7 @@ export function SectionWithIllustration({
   headingId,
   subheading,
   illustration,
+  svgUrl,
   illustrationLabel,
   children,
   reverse = false,
@@ -114,6 +129,7 @@ export function SectionWithIllustration({
       </div>
       <IllustrationFrame
         label={illustrationLabel}
+        svgUrl={svgUrl}
         className='lg:justify-self-center'
       >
         {illustration}
