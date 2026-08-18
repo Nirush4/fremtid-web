@@ -60,6 +60,37 @@ export interface HomeTranslations {
     };
     readonly local: { readonly title: string; readonly description: string };
   };
+  readonly contactSection: {
+    readonly tag: string;
+    readonly title: string;
+    readonly description: string;
+    readonly nameLabel: string;
+    readonly namePlaceholder: string;
+    readonly emailLabel: string;
+    readonly emailPlaceholder: string;
+    readonly phoneLabel: string;
+    readonly phonePlaceholder: string;
+    readonly packageLabel: string;
+    readonly packagePlaceholder: string;
+    readonly packageOptions: {
+      readonly starter: string;
+      readonly growth: string;
+      readonly complete: string;
+    };
+    readonly messageLabel: string;
+    readonly messagePlaceholder: string;
+    readonly submitButton: string;
+    readonly submittingButton: string;
+    readonly successMessage: string;
+    readonly errors: {
+      readonly nameRequired: string;
+      readonly emailInvalid: string;
+      readonly phoneRequired: string;
+      readonly packageRequired: string;
+      readonly messageRequired: string;
+      readonly messageMin: string;
+    };
+  };
 }
 
 export interface AboutTranslations {

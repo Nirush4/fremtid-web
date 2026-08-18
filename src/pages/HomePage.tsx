@@ -6,6 +6,7 @@ import { TechnologyForAll } from '../components/home/TechnologyForAll';
 import { TrustSignals } from '../components/home/TrustSignals';
 import { PageIntro } from '../components/ui/IllustrationFrame';
 import { HeroIllustration } from '../components/illustrations/HeroIllustration';
+import { ContactSection } from '../components/home/ContactSection';
 
 export function HomePage() {
   const { t } = useLanguage();
@@ -44,6 +45,7 @@ export function HomePage() {
       <TechnologyForAll />
       <FeaturedProjects />
       <TrustSignals />
+      <ContactSection />
     </>
   );
 }
