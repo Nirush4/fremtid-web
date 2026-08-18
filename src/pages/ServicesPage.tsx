@@ -96,7 +96,6 @@ export function ServicesPage() {
             {t.brand.tagline}
           </p>
 
-          {/* Premium Pill Button with inline SVG arrow */}
           <div className='mt-12'>
             <Link
               to='/contact'
