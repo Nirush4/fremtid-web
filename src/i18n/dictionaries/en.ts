@@ -237,12 +237,12 @@ export const en: TranslationDictionary = {
       process: {
         question: 'What does your process look like?',
         answer:
-          'We follow four clear steps: request a quote, receive our offer, review the first design draft, then development and publishing. You are involved at each milestone with structured feedback rounds.',
+          'We follow four clear steps: request a quote, receive our offer, review the first design draft, then development and publishing.',
       },
       support: {
         question: 'Do you offer support after launch?',
         answer:
-          'Yes. Every package includes post-launch support (30–90 days depending on tier). We also offer ongoing maintenance agreements for updates, security patches, and content changes.',
+          'Yes. Every package includes post-launch support (30 days depending on tier). We also offer ongoing maintenance agreements for updates, security patches, and content changes.',
       },
       pricing: {
         question: 'How does pricing work?',
