@@ -238,12 +238,12 @@ export const no: TranslationDictionary = {
       process: {
         question: 'Hvordan ser prosessen deres ut?',
         answer:
-          'Vi følger fire tydelige steg: be om tilbud, motta vårt tilbud, gjennomgå første designutkast, deretter utvikling og publisering. Du er involvert ved hver milepæl med strukturerte tilbakemeldingsrunder.',
+          'Vi følger fire tydelige steg: be om tilbud, motta vårt tilbud, gjennomgå første designutkast, deretter utvikling og publisering.',
       },
       support: {
         question: 'Tilbyr dere støtte etter lansering?',
         answer:
-          'Ja. Hver pakke inkluderer støtte etter lansering (30–90 dager avhengig av nivå). Vi tilbyr også løpende vedlikeholdsavtaler for oppdateringer, sikkerhetsfikser og innholdsendringer.',
+          'Ja. Hver pakke inkluderer støtte etter lansering (30 dager avhengig av nivå). Vi tilbyr også løpende vedlikeholdsavtaler for oppdateringer, sikkerhetsfikser og innholdsendringer.',
       },
       pricing: {
         question: 'Hvordan fungerer prisingen?',

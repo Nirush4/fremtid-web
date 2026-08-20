@@ -7,7 +7,6 @@ interface IllustrationFrameProps {
   readonly className?: string;
 }
 
-/** Responsive container for decorative SVG illustrations. */
 export function IllustrationFrame({
   children,
   svgUrl,
