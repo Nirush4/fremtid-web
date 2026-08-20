@@ -112,12 +112,16 @@ export const no: TranslationDictionary = {
   about: {
     pageTitle: 'Om Fremtid Web',
     pageDescription:
-      'Et byrå for programvareutvikling og design med fokus på frontend-kvalitet og gjennomtenkte merkevareopplevelser.',
+      'Vi gjør det enkelt og ukomplisert å få en profesjonell nettside. Fremtid Web er et lite og engasjert team som hjelper bedrifter å lykkes på nett med moderne design og brukervennlig teknologi.',
     storyHeading: 'Vår historie',
+    storySubheading: 'Kjerneprinsippene og lidenskapen bak alt vi gjør.',
+    missionTitle: 'Vår Visjon',
+    buildTitle: 'Slik Bygger Vi',
+    presenceTitle: 'Lokal Tilstedeværelse',
     storyParagraphs: [
-      'Fremtid Web ble grunnlagt for å hjelpe små og mellomstore bedrifter med å konkurrere på nett med samme kvalitetsstandard som større byråer — uten unødvendig kompleksitet eller oppblåste priser.',
-      'Vi spesialiserer oss på frontend-utvikling og grafisk design, og kombinerer ren kode med sterk visuell identitet. Hvert prosjekt bygges med tilgjengelighet, ytelse og langsiktig vedlikeholdbarhet i tankene.',
-      'Med base i Norge jobber vi tett med kunder på både norsk og engelsk, og veileder dem fra første tilbud til publisert nettsted.',
+      'Webloftet ble startet for å hjelpe små og mellomstore bedrifter å konkurrere på nett med samme høye kvalitet som større byråer – helt uten uoversiktlige prosesser og høye prislapper.',
+      'Vi er spesialister på moderne webutvikling og design, og kombinerer ren kode med en sterk visuell identitet. Hver nettside vi bygger har fokus på rask ytelse, brukervennlig teknologi og langsiktig trygghet.',
+      'Med base i Norge jobber vi tett med våre kunder på både norsk og engelsk, og veileder deg trygt fra den første ideen til nettsiden er på lufta.',
     ],
     expertiseHeading: 'Vår kompetanse',
     expertiseItems: {
