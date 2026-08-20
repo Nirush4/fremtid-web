@@ -97,8 +97,12 @@ export interface AboutTranslations {
   readonly pageTitle: string;
   readonly pageDescription: string;
   readonly storyHeading: string;
+  readonly storySubheading: string;
   readonly storyParagraphs: readonly string[];
   readonly expertiseHeading: string;
+  readonly missionTitle: string;
+  readonly buildTitle: string;
+  readonly presenceTitle: string;
   readonly expertiseItems: {
     readonly frontend: { readonly title: string; readonly description: string };
     readonly design: { readonly title: string; readonly description: string };
