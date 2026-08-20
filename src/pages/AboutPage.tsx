@@ -1,20 +1,7 @@
-import {
-  Code,
-  Heart,
-  MessageCircle,
-  Palette,
-  Sparkles,
-  Users,
-} from 'lucide-react';
+import { Heart, MessageCircle, Sparkles } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { PageIntro } from '../components/ui/IllustrationFrame';
 import { FeaturesIllustration } from '../components/illustrations/FeaturesIllustration';
-
-const EXPERTISE_ICONS = {
-  frontend: Code,
-  design: Palette,
-  collaboration: Users,
-} as const;
 
 const VALUE_ICONS = {
   quality: Sparkles,
@@ -24,12 +11,6 @@ const VALUE_ICONS = {
 
 export function AboutPage() {
   const { t } = useLanguage();
-
-  const expertise = [
-    { key: 'frontend' as const, ...t.about.expertiseItems.frontend },
-    { key: 'design' as const, ...t.about.expertiseItems.design },
-    { key: 'collaboration' as const, ...t.about.expertiseItems.collaboration },
-  ];
 
   const values = [
     { key: 'quality' as const, ...t.about.values.quality },
@@ -112,82 +93,42 @@ export function AboutPage() {
       </section>
 
       <section
-        aria-labelledby='expertise-heading'
-        className='px-4 py-16 bg-warm-beige sm:px-6'
+        aria-labelledby='values-heading'
+        className='px-6 py-16 overflow-hidden bg-surface sm:px-10'
       >
-        <div className='max-w-6xl mx-auto'>
+        <div className='max-w-2xl mx-auto mb-16 text-center'>
+          <div className='w-12 h-1 mx-auto mb-4 rounded-full bg-terra-cotta' />
           <h2
             id='expertise-heading'
-            className='mb-10 text-2xl font-bold text-center text-dark-chocolate sm:text-3xl'
-          >
-            {t.about.expertiseHeading}
-          </h2>
-          <ul className='grid gap-6 sm:grid-cols-3'>
-            {expertise.map(({ key, title, description }) => {
-              const Icon = EXPERTISE_ICONS[key];
-              return (
-                <li
-                  key={key}
-                  className='p-6 border-2 rounded-xl border-cappuccino/30 bg-surface'
-                >
-                  <div
-                    className='flex items-center justify-center w-12 h-12 mb-4 rounded-lg bg-cappuccino'
-                    aria-hidden='true'
-                  >
-                    <Icon
-                      className='w-6 h-6 text-dark-chocolate'
-                      strokeWidth={2}
-                    />
-                  </div>
-                  <h3 className='text-lg font-semibold text-dark-chocolate'>
-                    {title}
-                  </h3>
-                  <p className='mt-2 text-sm leading-relaxed text-dark-chocolate'>
-                    {description}
-                  </p>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </section>
-
-      <section
-        aria-labelledby='values-heading'
-        className='px-4 py-16 bg-surface sm:px-6'
-      >
-        <div className='max-w-6xl mx-auto'>
-          <h2
-            id='values-heading'
-            className='mb-10 text-2xl font-bold text-center text-dark-chocolate sm:text-3xl'
+            className='text-3xl font-extrabold tracking-tight text-dark-chocolate sm:text-4xl'
           >
             {t.about.valuesHeading}
           </h2>
-          <ul className='grid gap-6 sm:grid-cols-3'>
-            {values.map(({ key, title, description }) => {
-              const Icon = VALUE_ICONS[key];
-              return (
-                <li key={key} className='p-6 rounded-xl bg-warm-beige'>
-                  <div
-                    className='flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-terra-cotta'
-                    aria-hidden='true'
-                  >
-                    <Icon
-                      className='w-6 h-6 text-dark-chocolate'
-                      strokeWidth={2}
-                    />
-                  </div>
-                  <h3 className='text-lg font-semibold text-dark-chocolate'>
-                    {title}
-                  </h3>
-                  <p className='mt-2 text-sm leading-relaxed text-dark-chocolate'>
-                    {description}
-                  </p>
-                </li>
-              );
-            })}
-          </ul>
         </div>
+        <ul className='grid max-w-6xl gap-6 mx-auto sm:grid-cols-3'>
+          {values.map(({ key, title, description }) => {
+            const Icon = VALUE_ICONS[key];
+            return (
+              <li key={key} className='p-6 rounded-xl bg-warm-beige'>
+                <div
+                  className='flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-terra-cotta'
+                  aria-hidden='true'
+                >
+                  <Icon
+                    className='w-6 h-6 text-dark-chocolate'
+                    strokeWidth={2}
+                  />
+                </div>
+                <h3 className='text-lg font-semibold text-dark-chocolate'>
+                  {title}
+                </h3>
+                <p className='mt-2 text-sm leading-relaxed text-dark-chocolate'>
+                  {description}
+                </p>
+              </li>
+            );
+          })}
+        </ul>
       </section>
     </>
   );
