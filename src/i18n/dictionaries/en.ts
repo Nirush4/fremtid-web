@@ -111,12 +111,16 @@ export const en: TranslationDictionary = {
   about: {
     pageTitle: 'About Fremtid Web',
     pageDescription:
-      'A software development and design agency focused on front-end excellence and thoughtful brand experiences.',
+      'We make getting a professional website simple and stress-free. Fremtid Web is a small team dedicated to helping small and medium businesses grow online with modern designs and user-friendly technology.',
     storyHeading: 'Our story',
+    storySubheading: 'The core principles and passion behind everything we do.',
+    missionTitle: 'Our Mission',
+    buildTitle: 'How We Build',
+    presenceTitle: 'Local Presence',
     storyParagraphs: [
-      'Fremtid Web was founded to help small and mid-sized businesses compete online with the same quality standards as larger agencies — without the complexity or inflated price tags.',
-      'We specialise in front-end development and graphic design, combining clean code with strong visual identity. Every project is built with accessibility, performance, and long-term maintainability in mind.',
-      'Based in Norway, we work closely with clients in both Norwegian and English, guiding them from first quote to published site.',
+      'Fremtid Web was founded to help small and medium businesses compete online with the same high quality as larger agencies—without the heavy price tags or complexity.',
+      'We specialize in modern web development and design, combining clean code with a strong visual identity. Every website we build focuses on fast performance, user-friendly technology, and long-term reliability.',
+      'Based in Norway, we work closely with our clients in both Norwegian and English, guiding you smoothly from your first idea all the way to a live, professional website.',
     ],
     expertiseHeading: 'Our expertise',
     expertiseItems: {

@@ -3,6 +3,7 @@ import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { LOCALE_LABELS } from '../../i18n';
+import { scrollToTop } from '../../utils/scroll';
 
 const NAV_LINKS = [
   { to: '/', key: 'home' as const },
@@ -12,15 +13,21 @@ const NAV_LINKS = [
   { to: '/faq', key: 'faq' as const },
 ];
 
-export function Header() {
+export function Navbar() {
   const { locale, t, toggleLocale } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleNavClick = () => {
+    scrollToTop('smooth');
+    setMenuOpen(false);
+  };
 
   return (
     <header className='sticky top-0 z-50 border-b border-warm-beige bg-surface'>
       <div className='flex items-center justify-between max-w-6xl px-4 py-4 mx-auto sm:px-6'>
         <Link
           to='/'
+          onClick={handleNavClick}
           className='text-lg font-bold text-dark-chocolate hover:text-terra-cotta'
         >
           {t.brand.name}
@@ -34,6 +41,7 @@ export function Header() {
             <Link
               key={key}
               to={to}
+              onClick={handleNavClick}
               className='text-sm font-medium text-dark-chocolate hover:text-terra-cotta'
             >
               {t.nav[key]}
@@ -75,7 +83,7 @@ export function Header() {
                 <Link
                   to={to}
                   className='block px-3 py-2 text-sm font-medium rounded-lg text-dark-chocolate hover:bg-warm-beige'
-                  onClick={() => setMenuOpen(false)}
+                  onClick={handleNavClick}
                 >
                   {t.nav[key]}
                 </Link>

@@ -15,7 +15,7 @@
   }
 
   body {
-    @apply bg-warm-beige text-dark-chocolate antialiased;
+    @apply antialiased bg-warm-beige text-dark-chocolate;
   }
 
   :focus-visible {
