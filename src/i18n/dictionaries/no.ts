@@ -360,6 +360,12 @@ export const no: TranslationDictionary = {
       },
     },
   },
+  notFound: {
+    title: 'Siden ble ikke funnet',
+    subtitle:
+      'Oops! Det ser ut til at siden du leter etter har flyttet på seg eller ikke eksisterer lenger.',
+    backHome: 'Tilbake til forsiden',
+  },
   footer: {
     rights: 'Alle rettigheter reservert.',
     contact: 'hello@fremtidweb.no',

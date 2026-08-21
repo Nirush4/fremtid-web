@@ -20,7 +20,7 @@ export function TrustSignals() {
   return (
     <section
       aria-labelledby='trust-heading'
-      className='px-4 py-20 bg-warm-beige sm:px-6'
+      className='px-4 py-16 bg-warm-beige sm:px-6'
     >
       <div className='max-w-6xl mx-auto'>
         <div className='mb-12 grid items-center gap-10 lg:grid-cols-[1fr_minmax(280px,380px)]'>

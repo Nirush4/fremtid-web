@@ -1,6 +1,7 @@
 import { ArrowRight } from 'lucide-react';
 import type { ProjectContent, ProjectId } from '../../types/projects';
 import { useLanguage } from '../../context/LanguageContext';
+import { Link } from 'react-router-dom';
 
 interface ProjectCardProps {
   readonly projectId: ProjectId;
@@ -64,8 +65,8 @@ export function ProjectCard({ projectId, content }: ProjectCardProps) {
         ))}
       </ul>
 
-      <a
-        href={content.link}
+      <Link
+        to={content.link}
         target='_blank'
         rel='noopener noreferrer'
         className='inline-flex items-center gap-2 mt-6 text-sm font-semibold min-h-11 text-terra-cotta hover:text-dark-chocolate'
@@ -73,7 +74,7 @@ export function ProjectCard({ projectId, content }: ProjectCardProps) {
       >
         {t.projects.viewCaseStudy}
         <ArrowRight className='w-4 h-4' aria-hidden='true' />
-      </a>
+      </Link>
     </article>
   );
 }
