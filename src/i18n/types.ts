@@ -190,6 +190,11 @@ export interface TranslationDictionary {
   readonly projects: ProjectsTranslations;
   readonly faq: FaqTranslations;
   readonly services: ServicesTranslations;
+  readonly notFound: {
+    readonly title: string;
+    readonly subtitle: string;
+    readonly backHome: string;
+  };
   readonly footer: {
     readonly rights: string;
     readonly contact: string;
