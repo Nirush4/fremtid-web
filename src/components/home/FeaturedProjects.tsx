@@ -18,31 +18,32 @@ export function FeaturedProjects() {
   return (
     <section
       aria-labelledby='featured-projects-heading'
-      className='px-4 py-16 bg-warm-beige sm:px-6'
+      className='px-4 pb-16 bg-warm-beige sm:px-6'
     >
       <div className='max-w-6xl mx-auto'>
-        <div className='grid items-center gap-8 mb-10 lg:grid-cols-2'>
-          <div className='w-full'>
+        <div className='grid items-center gap-8 lg:grid-cols-12'>
+          <div className='flex justify-center w-full lg:col-span-6'>
             <IllustrationFrame
               label='Featured portfolio work illustration'
-              className='hidden sm:flex sm:items-center sm:justify-center p-6 w-full h-full min-h-[180px]'
+              className='hidden w-full max-w-sm p-6 sm:flex sm:items-center sm:justify-center'
             >
               <img
                 src='/image/prosjekter.svg'
                 alt=''
                 aria-hidden='true'
-                className='object-contain w-full h-auto '
+                className='object-contain w-full h-auto max-h-68 drop-shadow-sm'
               />
             </IllustrationFrame>
           </div>
-          <header className='flex flex-col justify-center h-full'>
+
+          <header className='flex flex-col justify-center h-full lg:col-span-6'>
             <h2
               id='featured-projects-heading'
               className='text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl text-dark-chocolate text-balance'
             >
               {t.home.featuredHeading}
             </h2>
-            <p className='max-w-xl mt-3 text-base leading-relaxed text-dark-chocolate'>
+            <p className='max-w-xl mt-3 text-base leading-relaxed text-dark-chocolate/80'>
               {t.home.featuredSubheading}
             </p>
           </header>
