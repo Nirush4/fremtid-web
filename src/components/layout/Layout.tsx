@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
-import { Footer, Navbar } from './Navbar';
+import { Navbar } from './Navbar';
 import { useLanguage } from '../../context/LanguageContext';
+import { Footer } from './Footer';
 
 export function Layout() {
   const { t } = useLanguage();

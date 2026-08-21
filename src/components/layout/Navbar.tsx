@@ -108,26 +108,3 @@ export function Navbar() {
     </header>
   );
 }
-
-export function Footer() {
-  const { t } = useLanguage();
-  const year = new Date().getFullYear();
-
-  return (
-    <footer className='border-t border-warm-beige bg-warm-beige'>
-      <div className='max-w-6xl px-4 py-8 mx-auto text-center sm:px-6'>
-        <p className='text-sm text-dark-chocolate'>
-          <a
-            href={`mailto:${t.footer.contact}`}
-            className='font-medium text-terra-cotta hover:text-dark-chocolate'
-          >
-            {t.footer.contact}
-          </a>
-        </p>
-        <p className='mt-2 text-sm text-dark-chocolate'>
-          © {year} {t.brand.name}. {t.footer.rights}
-        </p>
-      </div>
-    </footer>
-  );
-}
