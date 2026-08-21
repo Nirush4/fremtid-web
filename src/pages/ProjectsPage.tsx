@@ -2,14 +2,10 @@ import { useMemo, useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { ProjectCard } from '../components/projects/ProjectCard';
 import { ProjectFilters } from '../components/projects/ProjectFilters';
-import {
-  PageIntro,
-  IllustrationFrame,
-} from '../components/ui/IllustrationFrame';
+import { PageIntro } from '../components/ui/IllustrationFrame';
 import { ProjectsIllustration } from '../components/illustrations/ProjectsIllustration';
 import type { ProjectCategoryId, ProjectId } from '../types/projects';
 
-// Use Partial<Record<...>> so not all project IDs are strictly required to be listed
 const PROJECT_CATEGORIES: Partial<Record<ProjectId, ProjectCategoryId>> = {
   '1': 'web',
   '2': 'ecommerce',
