@@ -65,22 +65,7 @@ export function ProjectsPage() {
         aria-labelledby='projects-grid-heading'
         className='px-4 py-16 bg-surface sm:px-6'
       >
-        <div className='max-w-6xl mx-auto'>
-          <div className='mb-10 grid items-center gap-8 lg:grid-cols-[1fr_auto]'>
-            <h2
-              id='projects-grid-heading'
-              className='text-2xl font-bold text-dark-chocolate sm:text-3xl'
-            >
-              {t.projects.pageTitle}
-            </h2>
-            <IllustrationFrame
-              label='Project grid preview illustration'
-              className='hidden max-w-xs lg:block'
-            >
-              <ProjectsIllustration />
-            </IllustrationFrame>
-          </div>
-
+        <div className='max-w-6xl mx-auto '>
           <ProjectFilters
             activeCategory={activeCategory}
             onChange={setActiveCategory}
