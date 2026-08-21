@@ -204,7 +204,7 @@ export const en: TranslationDictionary = {
           'An exciting online marketplace where collectors and enthusiasts can browse unique listings, place live bids, and secure valuable finds.',
         tags: ['Auction', 'Bidding', 'Marketplace', 'Collectibles'],
         thumbnail: '/projects/aution-house.png',
-        link: 'https://auctionn-house.netlify.app/e',
+        link: 'https://auctionn-house.netlify.app/',
       },
       '5': {
         title: 'Flip Match – Memory Card Game',
@@ -358,6 +358,12 @@ export const en: TranslationDictionary = {
           'We build, test for accessibility, and launch your site — then hand over everything you need.',
       },
     },
+  },
+  notFound: {
+    title: 'Page not found',
+    subtitle:
+      'Oops! It looks like the page you are looking for has wandered off or no longer exists.',
+    backHome: 'Back to home',
   },
   footer: {
     rights: 'All rights reserved.',

@@ -5,6 +5,7 @@ import { FaqPage } from './pages/FaqPage';
 import { HomePage } from './pages/HomePage';
 import { ProjectsPage } from './pages/ProjectsPage';
 import { ServicesPage } from './pages/ServicesPage';
+import { NotFound } from './pages/NotFound';
 
 export default function App() {
   return (
@@ -12,10 +13,11 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="services" element={<ServicesPage />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="projects" element={<ProjectsPage />} />
-          <Route path="faq" element={<FaqPage />} />
+          <Route path='services' element={<ServicesPage />} />
+          <Route path='about' element={<AboutPage />} />
+          <Route path='projects' element={<ProjectsPage />} />
+          <Route path='faq' element={<FaqPage />} />
+          <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

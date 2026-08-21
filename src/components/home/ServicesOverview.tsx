@@ -20,7 +20,7 @@ export function ServicesOverview() {
   return (
     <section
       aria-labelledby='home-services-heading'
-      className='px-4 py-20 mx-auto bg-white sm:px-6 lg:px-8 max-w-7xl'
+      className='px-4 py-16 mx-auto bg-white sm:px-6 lg:px-8 max-w-7xl'
     >
       <div className='max-w-2xl mx-auto mb-12 text-center'>
         <h2
