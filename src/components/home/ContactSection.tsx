@@ -14,21 +14,25 @@ import {
   ChevronDown,
 } from 'lucide-react';
 
+interface Web3FormsResponse {
+  success: boolean;
+  message: string;
+}
+
 export function ContactSection() {
   const { t } = useLanguage();
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [serverError, setServerError] = useState<string | null>(null);
 
-  // Zod validation schema
   const contactSchema = z.object({
     name: z
       .string()
       .min(1, { message: t.home.contactSection.errors.nameRequired }),
-    email: z
-      .string()
-      .email({ message: t.home.contactSection.errors.emailInvalid }),
+    email: z.email({ message: t.home.contactSection.errors.emailInvalid }),
     phone: z
       .string()
-      .min(1, { message: t.home.contactSection.errors.phoneRequired }),
+      .min(1, { message: t.home.contactSection.errors.phoneRequired })
+      .regex(/^\d+$/, { message: 'Please enter numbers only' }),
     selectedPackage: z
       .string()
       .min(1, { message: t.home.contactSection.errors.packageRequired }),
@@ -50,19 +54,54 @@ export function ContactSection() {
   });
 
   const onSubmit = async (data: ContactFormData) => {
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    console.log('Form submitted successfully:', data);
-    setIsSubmitted(true);
-    reset();
+    setServerError(null);
+
+    const formValues = {
+      access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+      subject: `New Inquiry: ${data.selectedPackage} Package - Fremtid Web`,
+      from_name: data.name,
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      package: data.selectedPackage,
+      message: data.message,
+    };
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(formValues),
+      });
+
+      const responseData: Web3FormsResponse = await res.json();
+
+      if (responseData.success) {
+        setIsSubmitted(true);
+        reset();
+      } else {
+        setServerError(
+          responseData.message ||
+            'Failed to send message. Please try again later.'
+        );
+      }
+    } catch {
+      setServerError(
+        'Network error. Please check your connection and try again.'
+      );
+    }
   };
 
   return (
     <section
       aria-labelledby='contact-heading'
-      className='px-4 py-20 bg-surface sm:px-6'
+      className='px-4 py-16 bg-surface sm:px-6'
     >
       <div className='max-w-4xl mx-auto'>
-        <div className='p-8 border shadow-sm rounded-3xl bg-warm-beige sm:p-12 border-dark-chocolate/5'>
+        <div className='p-5 border shadow-sm rounded-3xl bg-warm-beige sm:p-12 border-dark-chocolate/5'>
           <div className='max-w-2xl mx-auto mb-10 text-center'>
             <span className='inline-block rounded-full bg-terra-cotta/10 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-terra-cotta mb-4'>
               {t.home.contactSection.tag}
@@ -84,7 +123,7 @@ export function ContactSection() {
                 <CheckCircle2 className='w-8 h-8' />
               </div>
               <h3 className='text-xl font-bold text-dark-chocolate'>
-                Success!
+                {t.home.contactSection.successTitle}
               </h3>
               <p className='max-w-md mx-auto text-sm text-dark-chocolate/80'>
                 {t.home.contactSection.successMessage}
@@ -93,7 +132,7 @@ export function ContactSection() {
                 onClick={() => setIsSubmitted(false)}
                 className='mt-4 inline-block rounded-xl bg-dark-chocolate px-6 py-2.5 text-sm font-semibold text-surface transition-colors hover:bg-dark-chocolate/90 cursor-pointer'
               >
-                Send another message
+                {t.home.contactSection.sendAnother}
               </button>
             </div>
           ) : (
@@ -102,7 +141,15 @@ export function ContactSection() {
               className='space-y-6'
               noValidate
             >
-              {/* Full Name */}
+              <input
+                type='checkbox'
+                name='botcheck'
+                className='hidden'
+                style={{ display: 'none' }}
+                aria-hidden='true'
+                tabIndex={-1}
+              />
+
               <div>
                 <label
                   htmlFor='name'
@@ -133,7 +180,6 @@ export function ContactSection() {
                 )}
               </div>
 
-              {/* Email Address */}
               <div>
                 <label
                   htmlFor='email'
@@ -164,7 +210,6 @@ export function ContactSection() {
                 )}
               </div>
 
-              {/* Mobile Number */}
               <div>
                 <label
                   htmlFor='phone'
@@ -195,7 +240,6 @@ export function ContactSection() {
                 )}
               </div>
 
-              {/* Choose Package Dropdown */}
               <div>
                 <label
                   htmlFor='selectedPackage'
@@ -241,7 +285,6 @@ export function ContactSection() {
                 )}
               </div>
 
-              {/* Describe Your Project */}
               <div>
                 <label
                   htmlFor='message'
@@ -258,7 +301,8 @@ export function ContactSection() {
                     rows={4}
                     placeholder={t.home.contactSection.messagePlaceholder}
                     {...register('message')}
-                    className={`w-full rounded-xl bg-surface pl-11 pr-4 py-3 text-sm text-dark-chocolate border outline-none transition-all resize-y ${
+                    className={`w-full rounded-xl bg-surface pl-11 pr-4 py-3 text-sm text-dark-chocolate border outline-none transition-all resize-y min-h-[120px] ${
+                      // <-- Added min-h-[120px]
                       errors.message
                         ? 'border-red-500 focus:ring-2 focus:ring-red-500/20'
                         : 'border-dark-chocolate/10 focus:border-terra-cotta focus:ring-2 focus:ring-terra-cotta/20'
@@ -272,7 +316,15 @@ export function ContactSection() {
                 )}
               </div>
 
-              {/* Submit Button */}
+              {serverError && (
+                <div
+                  role='alert'
+                  className='p-3 text-xs text-red-700 bg-red-100 border border-red-300 rounded-xl'
+                >
+                  {serverError}
+                </div>
+              )}
+
               <div className='text-center sm:text-right'>
                 <button
                   type='submit'

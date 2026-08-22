@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { FAQ_ITEMS } from '../data/faq';
 import { useLanguage } from '../context/LanguageContext';
 import { Accordion } from '../components/ui/Accordion';
@@ -7,9 +8,11 @@ import {
 } from '../components/ui/IllustrationFrame';
 import { FaqIllustration } from '../components/illustrations/FaqIllustration';
 import CallToAction from '../components/ui/CallToAction';
+import { ContactModalWrapper } from '../components/ui/ContactModalWrapper';
 
 export function FaqPage() {
   const { t } = useLanguage();
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   const accordionItems = FAQ_ITEMS.map(({ id }) => ({
     id,
@@ -48,7 +51,7 @@ export function FaqPage() {
             className='sticky hidden top-24 lg:block'
           >
             <img
-              src='/image/FAQ.svg '
+              src='/image/FAQ.svg'
               alt='Features and trust signals illustration'
               className='object-contain w-full h-full'
               aria-hidden='true'
@@ -57,7 +60,17 @@ export function FaqPage() {
         </div>
       </section>
 
-      <CallToAction t={t} />
+      <CallToAction
+        t={t}
+        onOpenContactModal={() => setIsContactModalOpen(true)}
+      />
+
+      {isContactModalOpen && (
+        <ContactModalWrapper
+          t={t}
+          onClose={() => setIsContactModalOpen(false)}
+        />
+      )}
     </>
   );
 }
