@@ -98,7 +98,7 @@ export function ContactSection() {
   return (
     <section
       aria-labelledby='contact-heading'
-      className='px-4 py-20 bg-surface sm:px-6'
+      className='px-4 py-16 bg-surface sm:px-6'
     >
       <div className='max-w-4xl mx-auto'>
         <div className='p-5 border shadow-sm rounded-3xl bg-warm-beige sm:p-12 border-dark-chocolate/5'>

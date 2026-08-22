@@ -1,3 +1,4 @@
+import { useState } from 'react'; // 1. Import useState
 import { PACKAGE_TIERS } from '../data/services';
 import { useLanguage } from '../context/LanguageContext';
 import { CoreInclusionsBanner } from '../components/services/CoreInclusionsBanner';
@@ -5,9 +6,11 @@ import { PackageTierCard } from '../components/services/PackageTierCard';
 import { ProcessTimeline } from '../components/services/ProcessTimeline';
 import { PageIntro } from '../components/ui/IllustrationFrame';
 import CallToAction from '../components/ui/CallToAction';
+import { ContactModalWrapper } from '../components/ui/ContactModalWrapper';
 
 export function ServicesPage() {
   const { t } = useLanguage();
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   return (
     <>
@@ -82,7 +85,17 @@ export function ServicesPage() {
         </div>
       </section>
 
-      <CallToAction t={t} />
+      <CallToAction
+        t={t}
+        onOpenContactModal={() => setIsContactModalOpen(true)}
+      />
+
+      {isContactModalOpen && (
+        <ContactModalWrapper
+          t={t}
+          onClose={() => setIsContactModalOpen(false)}
+        />
+      )}
     </>
   );
 }

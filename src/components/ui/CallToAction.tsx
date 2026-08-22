@@ -1,16 +1,19 @@
 import { type JSX } from 'react';
-import { Link } from 'react-router-dom';
 import type { TranslationDictionary } from '../../i18n/types';
 
 interface CallToActionProps {
   t: TranslationDictionary;
   title?: string;
   tagline?: string;
+  onOpenContactModal?: () => void;
 }
 
-export default function CallToAction({ t }: CallToActionProps): JSX.Element {
+export default function CallToAction({
+  t,
+  onOpenContactModal,
+}: CallToActionProps): JSX.Element {
   return (
-    <section className='px-6 py-16 bg-warm-beige/30 sm:px-10'>
+    <section className='px-6 py-16 border-b bg-warm-beige/30 sm:px-10 border-dark-chocolate/10'>
       <div className='max-w-4xl mx-auto text-center'>
         <div className='flex justify-center mb-10'>
           <div className='w-16 h-1.5 rounded-full bg-terra-cotta' />
@@ -25,9 +28,10 @@ export default function CallToAction({ t }: CallToActionProps): JSX.Element {
         </p>
 
         <div className='mt-12'>
-          <Link
-            to='/contact'
-            className='inline-flex items-center justify-center px-10 py-4 text-base font-bold tracking-wide uppercase transition-all duration-300 rounded-full shadow-xl group bg-dark-chocolate text-surface hover:bg-terra-cotta hover:scale-105 shadow-dark-chocolate/10'
+          <button
+            type='button'
+            onClick={onOpenContactModal}
+            className='inline-flex items-center justify-center px-10 py-4 text-base font-bold tracking-wide uppercase transition-all duration-300 rounded-full shadow-xl cursor-pointer group bg-dark-chocolate text-surface hover:bg-terra-cotta hover:scale-105 shadow-dark-chocolate/10'
           >
             {t.services.contactUs}
             <svg
@@ -43,7 +47,7 @@ export default function CallToAction({ t }: CallToActionProps): JSX.Element {
                 d='M14 5l7 7m0 0l-7 7m7-7H3'
               />
             </svg>
-          </Link>
+          </button>
         </div>
       </div>
     </section>
