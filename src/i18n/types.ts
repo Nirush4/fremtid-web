@@ -82,10 +82,13 @@ export interface HomeTranslations {
     readonly submitButton: string;
     readonly submittingButton: string;
     readonly successMessage: string;
+    readonly successTitle: string;
+    readonly sendAnother: string;
     readonly errors: {
       readonly nameRequired: string;
       readonly emailInvalid: string;
       readonly phoneRequired: string;
+      readonly phoneInvalid: string;
       readonly packageRequired: string;
       readonly messageRequired: string;
       readonly messageMin: string;

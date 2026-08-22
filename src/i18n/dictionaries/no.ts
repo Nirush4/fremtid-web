@@ -99,10 +99,14 @@ export const no: TranslationDictionary = {
       submittingButton: 'Sender...',
       successMessage:
         'Takk for meldingen! Vi tar kontakt med deg innen to virkedager.',
+      successTitle: 'Suksess!',
+      sendAnother: 'Send en ny melding',
       errors: {
         nameRequired: 'Vennligst skriv inn ditt fulle navn.',
         emailInvalid: 'Vennligst skriv inn en gyldig e-postadresse.',
         phoneRequired: 'Vennligst skriv inn mobilnummeret ditt.',
+        phoneInvalid:
+          'Vennligst skriv inn et gyldig telefonnummer som kun inneholder tall.',
         packageRequired: 'Vennligst velg en pakke.',
         messageRequired: 'Beskrivelsen kan ikke være tom.',
         messageMin: 'Beskrivelsen må være på minst 10 tegn.',

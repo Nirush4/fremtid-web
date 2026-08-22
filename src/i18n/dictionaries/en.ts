@@ -98,10 +98,14 @@ export const en: TranslationDictionary = {
       submittingButton: 'Sending...',
       successMessage:
         'Thank you for your message! We will get back to you within two business days.',
+      successTitle: 'Success!',
+      sendAnother: 'Send another message',
       errors: {
         nameRequired: 'Please enter your full name.',
         emailInvalid: 'Please enter a valid email address.',
         phoneRequired: 'Please enter your mobile number.',
+        phoneInvalid:
+          'Please enter a valid phone number containing only numbers.',
         packageRequired: 'Please choose a package.',
         messageRequired: 'Description cannot be empty.',
         messageMin: 'Description must be at least 10 characters long.',
@@ -362,7 +366,7 @@ export const en: TranslationDictionary = {
   notFound: {
     title: 'Page not found',
     subtitle:
-      'Oops! It looks like the page you are looking for has wandered off or no longer exists.',
+      'Oops! The page you are looking for seems to have moved or no longer exists.',
     backHome: 'Back to home',
   },
   footer: {
