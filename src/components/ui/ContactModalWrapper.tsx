@@ -8,7 +8,6 @@ interface ContactModalWrapperProps {
 }
 
 export function ContactModalWrapper({
-  t,
   onClose,
 }: ContactModalWrapperProps): JSX.Element {
   useEffect(() => {
