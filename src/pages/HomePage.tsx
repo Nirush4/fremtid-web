@@ -15,7 +15,7 @@ export function HomePage() {
     <>
       <section
         aria-labelledby='hero-heading'
-        className='px-4 py-16 bg-warm-beige sm:px-6 lg:py-24'
+        className='px-4 py-16 mx-auto max-w-7xl bg-warm-beige sm:px-6 lg:py-24'
       >
         <PageIntro
           title={t.home.heroTitle}

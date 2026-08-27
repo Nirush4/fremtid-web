@@ -201,6 +201,10 @@ export interface TranslationDictionary {
   readonly footer: {
     readonly rights: string;
     readonly contact: string;
+    readonly navigationTitle: string;
+    readonly getInTouchTitle: string;
+    readonly privacyPolicy: string;
+    readonly backToTop: string;
   };
 }
 

@@ -281,7 +281,7 @@ export const en: TranslationDictionary = {
         name: 'Launchpad Tier',
         description:
           'Ideal for emerging businesses seeking an essential, lightweight web presence to establish credibility.',
-        price: 'From 2 990 kr',
+        price: 'Coming soon!',
         priceNote: 'One-time project fee',
         features: [
           '1 landing page layout',
@@ -296,7 +296,7 @@ export const en: TranslationDictionary = {
         name: 'Expansion Tier',
         description:
           'Designed for growing companies requiring advanced content structure and audience engagement tools.',
-        price: 'From 5 990 kr',
+        price: 'Coming soon!',
         priceNote: 'One-time project fee',
         features: [
           'Everything included in the Launchpad Tier',
@@ -311,7 +311,7 @@ export const en: TranslationDictionary = {
         name: 'Enterprise Tier',
         description:
           'A robust, all-inclusive ecosystem built for established enterprises demanding maximum impact and functionality.',
-        price: 'From 9 990 kr',
+        price: 'Coming soon!',
         priceNote: 'Tailored to your scope',
         features: [
           'Everything included in the Expansion Tier',
@@ -372,5 +372,9 @@ export const en: TranslationDictionary = {
   footer: {
     rights: 'All rights reserved.',
     contact: 'hello@fremtidweb.no',
+    navigationTitle: 'Navigation',
+    getInTouchTitle: 'Get in Touch',
+    privacyPolicy: 'Privacy Policy',
+    backToTop: 'Back to top',
   },
 };

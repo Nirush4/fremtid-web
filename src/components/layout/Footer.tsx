@@ -18,26 +18,23 @@ export function Footer() {
   return (
     <footer className='border-t border-warm-beige bg-warm-beige/60 text-dark-chocolate'>
       <div className='max-w-6xl px-4 py-12 mx-auto sm:px-6 lg:px-8'>
-        {/* Main Footer Content Grid */}
         <div className='grid grid-cols-1 gap-10 pb-12 border-b md:grid-cols-3 md:gap-8 border-dark-chocolate/10'>
-          {/* Column 1: Brand & Tagline */}
           <div className='space-y-3'>
             <Link
               to='/'
               onClick={() => scrollToTop('smooth')}
-              className='inline-block text-xl font-extrabold tracking-tight transition-colors text-dark-chocolate hover:text-terra-cotta'
+              className='inline-block text-xl font-extrabold tracking-tight transition-colors w-30 mdsa:w-50 text-dark-chocolate hover:text-terra-cotta'
             >
-              {t.brand.name}
+              <img src='/logo.png' alt='logo' className='w-full h-full' />
             </Link>
             <p className='max-w-sm text-sm leading-relaxed text-dark-chocolate/70'>
               {t.brand.tagline}
             </p>
           </div>
 
-          {/* Column 2: Quick Links */}
           <div>
             <h3 className='mb-4 text-xs font-bold tracking-widest uppercase text-terra-cotta'>
-              Navigation
+              {t.footer.navigationTitle}
             </h3>
             <ul className='space-y-2.5'>
               {QUICK_LINKS.map(({ to, key }) => (
@@ -51,23 +48,22 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
-              {/* Privacy Policy Link */}
+
               <li>
                 <Link
                   to='/privacy'
                   onClick={() => scrollToTop('smooth')}
                   className='text-sm font-medium transition-colors text-dark-chocolate/80 hover:text-terra-cotta'
                 >
-                  Privacy Policy
+                  {t.footer.privacyPolicy}
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 3: Contact & Location */}
           <div className='space-y-4'>
             <h3 className='mb-4 text-xs font-bold tracking-widest uppercase text-terra-cotta'>
-              Get in Touch
+              {t.footer.getInTouchTitle}
             </h3>
             <div className='space-y-3 text-sm text-dark-chocolate/80'>
               <a
@@ -99,7 +95,7 @@ export function Footer() {
             className='inline-flex items-center gap-2 px-4 py-2 text-xs font-bold tracking-wider uppercase transition-all duration-300 border rounded-full shadow-sm cursor-pointer text-dark-chocolate bg-surface border-dark-chocolate/10 hover:bg-terra-cotta hover:text-surface hover:border-terra-cotta'
             aria-label='Scroll to top of page'
           >
-            <span>Back to top</span>
+            <span>{t.footer.backToTop}</span>
             <ArrowUp className='w-3.5 h-3.5' aria-hidden='true' />
           </button>
         </div>
