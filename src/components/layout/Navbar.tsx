@@ -28,7 +28,7 @@ export function Navbar() {
         <Link
           to='/'
           onClick={handleNavClick}
-          className='h-20 text-lg font-bold text-dark-chocolate hover:text-terra-cotta'
+          className='w-20 text-lg font-bold md:w-30 text-dark-chocolate hover:text-terra-cotta'
         >
           <img src='/logo.png' alt='logo' className='w-full h-full' />
         </Link>
