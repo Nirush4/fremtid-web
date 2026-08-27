@@ -25,6 +25,9 @@ export interface HomeTranslations {
   readonly heroSubtitle: string;
   readonly heroCta: string;
   readonly heroSecondaryCta: string;
+  readonly servicesTag: string;
+  readonly servicesCtaCard: string;
+
   readonly servicesHeading: string;
   readonly servicesSubheading: string;
   readonly serviceItems: {

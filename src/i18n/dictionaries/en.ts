@@ -22,6 +22,8 @@ export const en: TranslationDictionary = {
       'We craft accessible, high-performance websites and brand experiences for Norwegian businesses ready to grow online.',
     heroCta: 'View our packages',
     heroSecondaryCta: 'See our work',
+    servicesTag: 'Fremtid Web Services',
+    servicesCtaCard: 'Scalable Performance',
     servicesHeading: 'What we do',
     servicesSubheading:
       'Front-end development and graphic design — delivered as one cohesive team.',
@@ -349,24 +351,24 @@ export const en: TranslationDictionary = {
       offer: {
         title: 'We give an offer',
         description:
-          'You receive a detailed proposal with scope, milestones, and transparent pricing.',
+          'You receive a detailed proposal outlining project scope, timelines, and transparent pricing.',
       },
       design: {
-        title: 'First draft of design',
+        title: 'First design draft',
         description:
           'We share wireframes and visual concepts for your feedback before development begins.',
       },
       development: {
-        title: 'Development and publishing',
+        title: 'Development & launch',
         description:
-          'We build, test for accessibility, and launch your site — then hand over everything you need.',
+          'We build, test for accessibility, and launch your website — handing over everything you need.',
       },
     },
   },
   notFound: {
     title: 'Page not found',
     subtitle:
-      'Oops! The page you are looking for seems to have moved or no longer exists.',
+      'Oops! It looks like the page you are looking for has moved or no longer exists.',
     backHome: 'Back to home',
   },
   footer: {

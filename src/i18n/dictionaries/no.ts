@@ -23,6 +23,8 @@ export const no: TranslationDictionary = {
       'Vi lager tilgjengelige, høyytelses nettsteder og merkevareopplevelser for norske bedrifter som er klare for vekst på nett.',
     heroCta: 'Se våre pakker',
     heroSecondaryCta: 'Se vårt arbeid',
+    servicesTag: 'Fremtid Web Tjenester',
+    servicesCtaCard: 'Skalerbar ytelse',
     servicesHeading: 'Hva vi gjør',
     servicesSubheading:
       'Frontend-utvikling og grafisk design — levert av ett samlet team.',
