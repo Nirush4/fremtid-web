@@ -30,7 +30,7 @@ export function Navbar() {
           onClick={handleNavClick}
           className='h-20 text-lg font-bold text-dark-chocolate hover:text-terra-cotta'
         >
-          <img src='public/logo.png' alt='logo' className='w-full h-full' />
+          <img src='/logo.png' alt='logo' className='w-full h-full' />
         </Link>
 
         <nav
