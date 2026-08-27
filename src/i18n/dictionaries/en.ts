@@ -22,6 +22,8 @@ export const en: TranslationDictionary = {
       'We craft accessible, high-performance websites and brand experiences for Norwegian businesses ready to grow online.',
     heroCta: 'View our packages',
     heroSecondaryCta: 'See our work',
+    servicesTag: 'Fremtid Web Services',
+    servicesCtaCard: 'Scalable Performance',
     servicesHeading: 'What we do',
     servicesSubheading:
       'Front-end development and graphic design — delivered as one cohesive team.',
@@ -281,7 +283,7 @@ export const en: TranslationDictionary = {
         name: 'Launchpad Tier',
         description:
           'Ideal for emerging businesses seeking an essential, lightweight web presence to establish credibility.',
-        price: 'From 2 990 kr',
+        price: 'Coming soon!',
         priceNote: 'One-time project fee',
         features: [
           '1 landing page layout',
@@ -296,7 +298,7 @@ export const en: TranslationDictionary = {
         name: 'Expansion Tier',
         description:
           'Designed for growing companies requiring advanced content structure and audience engagement tools.',
-        price: 'From 5 990 kr',
+        price: 'Coming soon!',
         priceNote: 'One-time project fee',
         features: [
           'Everything included in the Launchpad Tier',
@@ -311,7 +313,7 @@ export const en: TranslationDictionary = {
         name: 'Enterprise Tier',
         description:
           'A robust, all-inclusive ecosystem built for established enterprises demanding maximum impact and functionality.',
-        price: 'From 9 990 kr',
+        price: 'Coming soon!',
         priceNote: 'Tailored to your scope',
         features: [
           'Everything included in the Expansion Tier',
@@ -349,28 +351,32 @@ export const en: TranslationDictionary = {
       offer: {
         title: 'We give an offer',
         description:
-          'You receive a detailed proposal with scope, milestones, and transparent pricing.',
+          'You receive a detailed proposal outlining project scope, timelines, and transparent pricing.',
       },
       design: {
-        title: 'First draft of design',
+        title: 'First design draft',
         description:
           'We share wireframes and visual concepts for your feedback before development begins.',
       },
       development: {
-        title: 'Development and publishing',
+        title: 'Development & launch',
         description:
-          'We build, test for accessibility, and launch your site — then hand over everything you need.',
+          'We build, test for accessibility, and launch your website — handing over everything you need.',
       },
     },
   },
   notFound: {
     title: 'Page not found',
     subtitle:
-      'Oops! The page you are looking for seems to have moved or no longer exists.',
+      'Oops! It looks like the page you are looking for has moved or no longer exists.',
     backHome: 'Back to home',
   },
   footer: {
     rights: 'All rights reserved.',
     contact: 'hello@fremtidweb.no',
+    navigationTitle: 'Navigation',
+    getInTouchTitle: 'Get in Touch',
+    privacyPolicy: 'Privacy Policy',
+    backToTop: 'Back to top',
   },
 };
