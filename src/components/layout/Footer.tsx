@@ -51,6 +51,16 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              {/* Privacy Policy Link */}
+              <li>
+                <Link
+                  to='/privacy'
+                  onClick={() => scrollToTop('smooth')}
+                  className='text-sm font-medium transition-colors text-dark-chocolate/80 hover:text-terra-cotta'
+                >
+                  Privacy Policy
+                </Link>
+              </li>
             </ul>
           </div>
 

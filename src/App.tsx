@@ -6,6 +6,7 @@ import { HomePage } from './pages/HomePage';
 import { ProjectsPage } from './pages/ProjectsPage';
 import { ServicesPage } from './pages/ServicesPage';
 import { NotFound } from './pages/NotFound';
+import { PrivacyPolicy } from './pages/PrivacyPolicy';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path='about' element={<AboutPage />} />
           <Route path='projects' element={<ProjectsPage />} />
           <Route path='faq' element={<FaqPage />} />
+          <Route path='privacy' element={<PrivacyPolicy />} />
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
