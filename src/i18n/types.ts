@@ -25,6 +25,9 @@ export interface HomeTranslations {
   readonly heroSubtitle: string;
   readonly heroCta: string;
   readonly heroSecondaryCta: string;
+  readonly servicesTag: string;
+  readonly servicesCtaCard: string;
+
   readonly servicesHeading: string;
   readonly servicesSubheading: string;
   readonly serviceItems: {
@@ -201,6 +204,10 @@ export interface TranslationDictionary {
   readonly footer: {
     readonly rights: string;
     readonly contact: string;
+    readonly navigationTitle: string;
+    readonly getInTouchTitle: string;
+    readonly privacyPolicy: string;
+    readonly backToTop: string;
   };
 }
 

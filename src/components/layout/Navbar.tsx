@@ -24,13 +24,13 @@ export function Navbar() {
 
   return (
     <header className='sticky top-0 z-50 border-b border-warm-beige bg-surface'>
-      <div className='flex items-center justify-between max-w-6xl px-4 py-4 mx-auto sm:px-6'>
+      <div className='flex items-center justify-between px-4 py-2 mx-auto max-w-7xl sm:px-6'>
         <Link
           to='/'
           onClick={handleNavClick}
-          className='text-lg font-bold text-dark-chocolate hover:text-terra-cotta'
+          className='h-20 text-lg font-bold text-dark-chocolate hover:text-terra-cotta'
         >
-          {t.brand.name}
+          <img src='public/logo.png' alt='logo' className='w-full h-full' />
         </Link>
 
         <nav

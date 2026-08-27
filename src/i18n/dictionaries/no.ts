@@ -23,6 +23,8 @@ export const no: TranslationDictionary = {
       'Vi lager tilgjengelige, høyytelses nettsteder og merkevareopplevelser for norske bedrifter som er klare for vekst på nett.',
     heroCta: 'Se våre pakker',
     heroSecondaryCta: 'Se vårt arbeid',
+    servicesTag: 'Fremtid Web Tjenester',
+    servicesCtaCard: 'Skalerbar ytelse',
     servicesHeading: 'Hva vi gjør',
     servicesSubheading:
       'Frontend-utvikling og grafisk design — levert av ett samlet team.',
@@ -282,7 +284,7 @@ export const no: TranslationDictionary = {
         name: 'Grunnpakke',
         description:
           'Ideell for oppstartsselskaper som trenger en profesjonell og lettvektig digital tilstedeværelse.',
-        price: 'Fra 2 990 kr',
+        price: 'Kommer snart!',
         priceNote: 'Engangsprosjekthonorar',
         features: [
           '1 skreddersydd nettsidelayout',
@@ -297,7 +299,7 @@ export const no: TranslationDictionary = {
         name: 'Utvidelsespakke',
         description:
           'Skapt for voksende bedrifter som krever utvidet innholdsstruktur og gode verktøy for kundekontakt.',
-        price: 'Fra 5 990 kr',
+        price: 'Kommer snart!',
         priceNote: 'Engangsprosjekthonorar',
         features: [
           'Alt inkludert i Grunnpakken',
@@ -312,7 +314,7 @@ export const no: TranslationDictionary = {
         name: 'Bedriftspakke',
         description:
           'En komplett og robust løsning for etablerte bedrifter som ønsker maksimal synlighet og funksjonalitet.',
-        price: 'Fra 9 990 kr',
+        price: 'Kommer snart!',
         priceNote: 'Skreddersydd etter omfang',
         features: [
           'Alt inkludert i Utvidelsespakken',
@@ -373,5 +375,9 @@ export const no: TranslationDictionary = {
   footer: {
     rights: 'Alle rettigheter reservert.',
     contact: 'hello@fremtidweb.no',
+    navigationTitle: 'Navigasjon',
+    getInTouchTitle: 'Ta kontakt',
+    privacyPolicy: 'Personvernerklæring',
+    backToTop: 'Til toppen',
   },
 };
