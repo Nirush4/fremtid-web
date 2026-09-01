@@ -444,16 +444,7 @@ export const PrivacyPolicy = () => {
                 </strong>{' '}
                 As a small, independent freelance operation, we are not required
                 to appoint a formal Data Protection Officer under the GDPR.
-              </li>
-              <li>
-                <strong className='text-dark-chocolate'>Email Address:</strong>{' '}
-                <a
-                  href='mailto:coming_soon@email.com'
-                  className='font-medium text-terra-cotta hover:underline'
-                >
-                  coming_soon@email.com
-                </a>
-              </li>
+              </li>{' '}
             </ul>
           </section>
         </div>
